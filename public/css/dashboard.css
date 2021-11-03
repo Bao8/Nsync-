@@ -107,6 +107,9 @@ body {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
 
+ul.menu li.nav-link-a{
+	color: blue;
+}
 
 ul.menu {
   padding: 0 ;
@@ -163,6 +166,3 @@ ul.menu:after { /*Clearfix*/
 /*	background-color:#fff; */
 }
 
-.usename nav-link-a{
-	color: blue;
-}
