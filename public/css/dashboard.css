@@ -41,6 +41,7 @@ body {
 .sidebar .nav-link {
   font-weight: 500;
   color: #333;
+  
 }
 
 .sidebar .nav-link .feather {
@@ -55,6 +56,7 @@ body {
 .sidebar .nav-link:hover .feather,
 .sidebar .nav-link.active .feather {
   color: inherit;
+  
 }
 
 .sidebar-heading {
@@ -81,7 +83,7 @@ body {
  */
 
 .navbar-brand {
-  padding-top: .75rem;
+  padding-top: .80rem;
   padding-bottom: .75rem;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, .25);
@@ -112,22 +114,20 @@ ul.menu {
 }
 ul.menu li {
   float: left;  /*メインメニューは横並びに*/
-  width: 150px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, .1);
+  width: 100px;
   position: relative;  /*子要素の基準とするために指定*/
   list-style-type: none;
   box-sizing:border-box;
 }
 ul.menu li a {
   display: block;
-  line-height: 40px;
   text-align: center;
   text-decoration: none;
   color: #fff;
 }
 ul.menu li a:hover {
-  background-color: #5169A8;
+	color:rgba(255, 255, 255, .1);
+  /*background-color: rgba(255, 255, 255, .1);; */
 }
 ul.menu li ul.sub {
   display: none;
@@ -157,4 +157,12 @@ ul.menu:after { /*Clearfix*/
   content:".";
   display:block;
   clear:both;
+}
+
+.username {
+/*	background-color:#fff; */
+}
+
+.usename nav-link-a{
+	color: blue;
 }

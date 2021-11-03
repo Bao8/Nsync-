@@ -13,15 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/sumple', function () {
-    return view('sumple');
+Route::get('/dashboad_others', function () {
+    return view('dashboad_others');
 });
 
 Route::get('/', function () {
-    return view('dashboad');
+    return view('dashboad_home');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
+Route::get('/dashboad_meta', function () {
+    return view('dashboad_meta');
 });
 
+Route::get('/dashboad_restore', function () {
+    return view('dashboad_restore');
+});
+
+Route::get('/dashboad_sozai', function () {
+    return view('dashboad_sozai');
+});
+
+Route::get('/index', function () {
+    return view('index');
+});
