@@ -32,42 +32,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="/">
-                  <span data-feather="home"></span>
-                  ホーム <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dashboad_restore">
-                  <span data-feather="file"></span>
-                  リストア依頼
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dashboad_sozai">
-                  <span data-feather="shopping-cart"></span>
-                  素材管理
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dashboad_meta">
-                  <span data-feather="users"></span>
-                  メタ管理
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dashboad_others">
-                  <span data-feather="bar-chart-2"></span>
-                  その他
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        @extends('layouts.dashboad_sideber_layout')
 
         @yield('content')
       </div>

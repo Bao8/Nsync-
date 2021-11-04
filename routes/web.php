@@ -36,3 +36,7 @@ Route::get('/dashboad_sozai', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/Nsync_layout', function () {
+    return view('Nsync_layout');
+});
