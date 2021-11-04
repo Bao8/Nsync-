@@ -1,30 +1,30 @@
-<nav class="col-md-2 d-none d-md-block bg-light sidebar">
-  <div class="sidebar-sticky">
-	<ul class="nav flex-column">
-	  <li class="nav-item">
-		<a class="nav-link active" href="/">
-		  <span data-feather="home">ホーム</span>
-		   <span class="sr-only">(current)</span>
+   <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+		  <span data-feather="home"></span>
+		   ホーム<span class="sr-only">(current)</span>
 		</a>
 	  </li>
 	  <li class="nav-item">
 		<a class="nav-link" href="dashboad_restore">
-		  <span data-feather="file">リストア依頼</span>
+		  リストア依頼<span data-feather="file"</span>
 		</a>
 	  </li>
 	  <li class="nav-item">
 		<a class="nav-link" href="dashboad_sozai">
-		  <span data-feather="shopping-cart">素材管理</span>
+		  素材管理<span data-feather="shopping-cart"></span>
 		</a>
 	  </li>
 	  <li class="nav-item">
 		<a class="nav-link" href="dashboad_meta">
-		  <span data-feather="users">メタ管理</span>
+		  メタ管理<span data-feather="users"></span>
 		</a>
 	  </li>
 	  <li class="nav-item">
 		<a class="nav-link" href="dashboad_others">
-		  <span data-feather="bar-chart-2">その他</span>
+		  その他<span data-feather="bar-chart-2"></span>
 		</a>
 	  </li>
 	</ul>

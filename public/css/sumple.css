@@ -1,23 +1,10 @@
-.header{
-    height: 40px;
-    text-align: center;
-    /* background-color: #343a40; */
-	
-}
-
-main{
-    display: flex;
-    min-height: 100vh;
-}
-.content{
-    flex: 1;
-    background-color: #eee;
-    text-align: center;
+.navbar-color{
+	background-color:rgba(0, 0, 0, .25);
 }
 
 .sidebar {
   text-align: center;
-  
+  position:sticky;
   top: 0;
   bottom: 0;
   left: 0;
@@ -29,67 +16,14 @@ main{
 }
 
 .navbar-brand {
-/* 　　position:left; */
-  /* text-align:center; */
-  /* padding-top: .80rem; */
-  /* padding-bottom: .75rem; */
+	text-align:center;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
   font-size: 1rem;
-  color:#fff;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
 
 .shadow {
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-ul.menu {
-  padding: 0 ;
-  margin: 0;
-}
-ul.menu li {
-  float: left;  /*メインメニューは横並びに*/
-  width: 100px;
-  position: relative;  /*子要素の基準とするために指定*/
-  list-style-type: none;
-  box-sizing:border-box;
-}
-ul.menu li a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
-ul.menu li a:hover {
-	color:rgba(255, 255, 255, .1);
-  /*background-color: rgba(255, 255, 255, .1);; */
-}
-ul.menu li ul.sub {
-  display: none;
-  position: absolute;
-  /*サブメニューを開いた際に、背後の要素の影響を受けないようにする*/
-  padding: 0;
-  margin: 0;
-}
- 
-ul.menu li:hover ul.sub {
-  display: block; 
-}
- 
-ul.menu li ul.sub li:first-child{
-  border-top: 1px solid #1C2973; /*最初の要素のみボーダートップを指定*/
-}
-ul.menu li ul.sub li {
-  border: 1px solid #1C2973;  /*ボーダーの指定*/
-  border-top: none;  /*ボーダートップは重なって太くなるので解除*/
-}
-ul.menu {
- zoom:1; /*Clearfix IE6-7 対応*/
-}
-ul.menu:after { /*Clearfix*/
-  height:0;
-  visibility:hidden;
-  content:".";
-  display:block;
-  clear:both;
 }
