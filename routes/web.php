@@ -17,7 +17,7 @@ Route::get('/dashboad_others', function () {
     return view('dashboad_others');
 });
 
-Route::get('/', function () {
+Route::get('/dashboad_home', function () {
     return view('dashboad_home');
 });
 
@@ -39,4 +39,8 @@ Route::get('/index', function () {
 
 Route::get('/Nsync_layout', function () {
     return view('Nsync_layout');
+});
+
+Route::get('/dashboad_sozai_info', function () {
+    return view('dashboad_sozai_info');
 });

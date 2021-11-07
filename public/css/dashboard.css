@@ -88,6 +88,23 @@ body {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  height:100%;
+}
+
+.username {
+  padding-top: .80rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  text-align:center;
+  color:#fff;
+  height:100%;
+}
+
+.username:hover {
+	text-decoration:none;
+
 }
 
 .navbar .form-control {
@@ -97,12 +114,13 @@ body {
 }
 
 ul.menu {
-  padding: 0 ;
-  margin: 0;
+	height:50px;
 }
+
 ul.menu li {
   float: left;  /*メインメニューは横並びに*/
-  width: 100px;
+  width: 50%;
+  height:100%;
   position: relative;  /*子要素の基準とするために指定*/
   list-style-type: none;
   box-sizing:border-box;
@@ -114,7 +132,7 @@ ul.menu li a {
   color: #fff;
 }
 ul.menu li a:hover {
-	color:rgba(255, 255, 255, .1);
+	color:#fff;
   /*background-color: rgba(255, 255, 255, .1);; */
 }
 ul.menu li ul.sub {
@@ -147,7 +165,30 @@ ul.menu:after { /*Clearfix*/
   clear:both;
 }
 
-.username {
-/*	background-color:#fff; */
+/* 素材管理 */
+
+.titleinfo {
+	height:200px;
 }
 
+.photo{
+	background-color:gray;
+	height:150px;
+}
+
+.infomation {
+	background-color:pink;
+	height:150px;
+}
+
+.tab-area {
+	/* overflow-x:scroll; */
+	/* overflow-y:hidden; */
+	/* flex-wrap: nowrap; */
+}
+
+.tab-menu {
+	overflow-x:scroll;
+	overflow-y:hidden;
+	flex-wrap: nowrap;
+}

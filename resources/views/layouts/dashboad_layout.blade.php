@@ -7,34 +7,36 @@
     <title>Nsync Beta</title>
 	  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
   <body >
 	<nav>
+		<div class="row">
 		<ul class="menu navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-			<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Nsync Beta</a>
-		  <li><a class="nav-link" href="#">Menu A </a>
+			<a class="navbar-brand col-sm-3 col-md-2 mr-0 href="#">Nsync Beta</a>
+		  <div class="col-md-5 tab p-0">
+		  <li><a class="nav-link border" href="#">銀の匙　Silver Spoon</a>
 		  </li>
-		  <li><a class="nav-link" href="#">Menu B </a>
-		  </li>
-		  <li><a class="nav-link" href="#">Menu C </a>
-		  </li>
-		  <li><a class="nav-link" href="#">Menu D </a>	
-		  </li>
-		  <li><a class="nav-link" href="#">Menu D </a>	
-		  </li>
-		  <li><a class="nav-link" href="#">Menu D </a>	
-		  </li>
-		  <li>
-			<a class="nav-link-a" href="#">Use Name</a>
-		  </li>
+		  <li><a class="nav-link border" href="#">VFJPA10000063894</a>
+		  </div>
+		  <form class="col-md-3 d-flex">
+		    <input class="form-control form-control-dark w-100 mx-2" type="text" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		  </form>
+			<p class="col-md-2 username m-0">ユーザーネーム</p>
 		</ul> 
+		</div>
+		
     </nav>
 
     <div class="container-fluid">
       <div class="row">
         @extends('layouts.dashboad_sideber_layout')
-
+		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         @yield('content')
+		</main>
       </div>
     </div>
 
@@ -75,6 +77,7 @@
           }
         }
       });
+	  
     </script>
     --}}
 
