@@ -12,7 +12,7 @@
 					<a class="nav-link" href="dashboad_home">トップリスト</a>
 				</li>
 				<li>
-					<a class="nav-link" href="dashboad_home">今日の納品</a>
+					<a class="nav-link" href="dashboad_sozai">今日の納品</a>
 				</li>
 				<li>
 					<a class="nav-link" href="dashboad_home">詳細検索</a>
