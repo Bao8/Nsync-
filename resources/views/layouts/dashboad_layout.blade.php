@@ -7,9 +7,28 @@
     <title>Nsync Beta</title>
 	  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/dashboard-sideber.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.0.0/velocity.min.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $(function () {
+            $('.nav-item > a').on('click', function (e) {
+                e.preventDefault();
+                var $subNav = $(this).next('.nav-sub');
+                if ($subNav.css("display") === "none") {
+                    $(this).addClass('is-active');
+                    $subNav.velocity('slideDown', {duration: 400});
+                } else {
+                    $(this).removeClass('is-active');
+                    $subNav.velocity('slideUp', {duration: 400});
+                }
+            });
+        });
+    })(jQuery);
+  </script>
   </head>
   <body >
 	<nav>
