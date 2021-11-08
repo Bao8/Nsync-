@@ -9,39 +9,54 @@
 			</a>
 			<ul class="nav-sub">
 				<li>
-					<a class="nav-link" href="dashboad_home">トップ</a>
+					<a class="nav-link" href="dashboad_home">トップリスト</a>
 				</li>
 				<li>
 					<a class="nav-link" href="dashboad_home">今日の納品</a>
 				</li>
 				<li>
-					<a class="nav-link" href="dashboad_home">明日の納品</a>
+					<a class="nav-link" href="dashboad_home">詳細検索</a>
+				</li>
+				{{--
+				<li>
+					<a class="nav-link" href="dashboad_sozai">素材管理</a>
 				</li>
 				<li>
-					<a class="nav-link" href="dashboad_home">About 3</a>
+					<a class="nav-link" href="dashboad_meta">メタ管理</a>
 				</li>
+				<li>
+					<a class="nav-link" href="#">資料データ管理</a>
+				</li>
+				--}}
 			</ul>
 		</li>
+		<a class="nav-blank"></a>
+		<li class="nav-item">
+			<a class="nav-link" href="">
+				<span data-feather="home"></span>
+				LTO
+				<span class="sr-only">(current)</span>
+			</a>
+			<ul class="nav-sub">
+				<li>
+					<a class="nav-link" href="dashboad_home">保存依頼</a>
+				</li>
+				<li>
+					<a class="nav-link" href="dashboad_home">リストア依頼</a>
+				</li>				
+			</ul>
+		</li>
+		<a class="nav-blank"></a>
 		<li>
-			<a class="nav-link" href="dashboad_restore">
-			リストア依頼<span data-feather="file"></span>
+			<a class="nav-link" href="#">
+		  	なゆたクラウド<br>（ファイル共有）<span data-feather="shopping-cart"></span>
 			</a>
 		</li>
 		<li>
-			<a class="nav-link" href="dashboad_sozai">
-		  	素材管理<span data-feather="shopping-cart"></span>
+			<a class="nav-link" href="#">
+			ポータルサイト<span data-feather="users"></span>
 			</a>
 		</li>
-		<li>
-			<a class="nav-link" href="dashboad_meta">
-		  	メタ管理<span data-feather="users"></span>
-			</a>
-		</li>
-		<li>
-			<a class="nav-link" href="dashboad_others">
-		  	その他<span data-feather="bar-chart-2"></span>
-			</a>
-	  	</li>
 	</ul>
   	</div>
 </nav>

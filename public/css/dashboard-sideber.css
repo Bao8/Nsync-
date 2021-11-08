@@ -28,6 +28,10 @@
   }
 }
 
+.sidebar .nav-blank {
+  margin-bottom: 40px;
+}
+
 .sidebar .nav-link {
   font-weight: 500;
   color: #333;
