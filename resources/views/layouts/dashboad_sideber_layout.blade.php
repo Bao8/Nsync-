@@ -49,7 +49,7 @@
 		<a class="nav-blank"></a>
 		<li>
 			<a class="nav-link" href="#">
-		  	なゆたクラウド<br>（ファイル共有）<span data-feather="shopping-cart"></span>
+		  	なゆたクラウド<span data-feather="shopping-cart"></span>
 			</a>
 		</li>
 		<li>
