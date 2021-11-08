@@ -2,12 +2,15 @@
 	<div class="sidebar-sticky">
 	<ul class="nav flex-column">
 		<li class="nav-item">
-			<a class="nav-link" href="dashboad_home">
+			<a class="nav-link" href="">
 				<span data-feather="home"></span>
 				CMS
 				<span class="sr-only">(current)</span>
 			</a>
 			<ul class="nav-sub">
+				<li>
+					<a class="nav-link" href="dashboad_home">トップ</a>
+				</li>
 				<li>
 					<a class="nav-link" href="dashboad_home">今日の納品</a>
 				</li>
