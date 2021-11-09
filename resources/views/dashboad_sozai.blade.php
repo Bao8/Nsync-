@@ -8,7 +8,7 @@
 </ul>
 <div class="tab-content" id="myTabContent">
 	<div class="tab-pane fade show active mt-1" id="series" role="tabpanel" aria-labelledby="series-tab">
-		<div class="titleinfo">
+		<div class="titleinfo ">
 			<div class="row m-0">
 						<ul class="menu navbar nav-fill p-0 shadow col-md-12">
 							
@@ -17,16 +17,17 @@
 							<li><p class="title m-0 border" href="#">VFJPA10000063894</p></li>
 
 						</ul>
-						<div class="photo col-md-6 p-0 shadow">
+						<div class="photo col-md-6 p-1 shadow">
 							<p>案件</p>
-							<ul>
-								<span class="badge bg-primary">Paravi</span>
-								<span class="badge bg-success">Hulu</span>
-								<span class="badge bg-warning text-dark">Google</span>
-								<span class="badge bg-info">Amazon</span>
-							</ul>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+							  <label class="form-check-label" for="defaultCheck1">
+								Default checkbox1
+							  </label>
 							</div>
-							<div class="infomation col-md-6 p-0 shadow">
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+						</div>
+							<div class="infomation col-md-6 p-1 shadow">
 							<p>担当</p>
 							<ul>
 								<span class="badge bg-primary">平沼</span>
@@ -34,6 +35,7 @@
 								<span class="badge bg-warning text-dark">西田</span>
 								<span class="badge bg-info text-dark">大場</span>
 							</ul>
+							<input type="file" class="form-control-file" id="exampleFormControlFile1">
 						</div>
 			</div>
 			</div>
