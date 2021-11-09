@@ -44,7 +44,7 @@
 		    <input class="form-control form-control-dark w-100 mx-2" type="text" placeholder="Search" aria-label="Search">
 			<button class="btn btn-outline-success" type="submit">Search</button>
 		  </form>
-			<p class="col-md-2 username m-0">ユーザーネーム</p>
+		<p class="col-md-2 username m-0">User Name</p>
 		</ul> 
 		</div>
 		

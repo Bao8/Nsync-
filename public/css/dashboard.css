@@ -168,7 +168,8 @@ ul.menu:after { /*Clearfix*/
 /* 素材管理 */
 
 .titleinfo {
-	height:200px;
+	height:250px;
+	margin-top:0.25em;
 }
 
 .photo{
@@ -191,4 +192,11 @@ ul.menu:after { /*Clearfix*/
 	overflow-x:scroll;
 	overflow-y:hidden;
 	flex-wrap: nowrap;
+}
+
+.title {
+	color:#000;
+	text-align:center;
+	padding:5px;
+	font-size:2em;
 }
