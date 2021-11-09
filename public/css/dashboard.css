@@ -173,12 +173,12 @@ ul.menu:after { /*Clearfix*/
 }
 
 .photo{
-	background-color:gray;
+	/* background-color:gray; */
 	height:150px;
 }
 
 .infomation {
-	background-color:pink;
+	/* background-color:pink; */
 	height:150px;
 }
 

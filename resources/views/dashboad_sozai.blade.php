@@ -1,9 +1,9 @@
 @extends('layouts.dashboad_layout')
 
 @section('content')
-<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+<ul class="nav nav-tabs nav-fill nav-pills bg-success" id="myTab" role="tablist">
 	<li class="nav-item" role="presentation">
-		<a class="nav-link active" id="series-tab" data-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="true">Series</a>
+		<a class="nav-link active" id="series-tab" data-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="true">Series<span class="badge bg-danger m-1">6</span></a>
 	</li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -17,11 +17,23 @@
 							<li><p class="title m-0 border" href="#">VFJPA10000063894</p></li>
 
 						</ul>
-						<div class="photo col-md-6 p-0">
-							<p>Sumple</p>
+						<div class="photo col-md-6 p-0 shadow">
+							<p>案件</p>
+							<ul>
+								<span class="badge bg-primary">Paravi</span>
+								<span class="badge bg-success">Hulu</span>
+								<span class="badge bg-warning text-dark">Google</span>
+								<span class="badge bg-info">Amazon</span>
+							</ul>
 							</div>
-							<div class="infomation col-md-6 p-0">
-							<p>Sumple</p>
+							<div class="infomation col-md-6 p-0 shadow">
+							<p>担当</p>
+							<ul>
+								<span class="badge bg-primary">平沼</span>
+								<span class="badge bg-success">坂口</span>
+								<span class="badge bg-warning text-dark">西田</span>
+								<span class="badge bg-info text-dark">大場</span>
+							</ul>
 						</div>
 			</div>
 			</div>
@@ -34,7 +46,8 @@
 				<a class="nav-link" id="episode2-tab" data-toggle="tab" href="#episode2" role="tab" aria-controls="episode2" aria-selected="false">Eps2</a>
 			</li>
 			<li class="nav-item" role="presentation">
-				<a class="nav-link" id="episode3-tab" data-toggle="tab" href="#episode3" role="tab" aria-controls="episode3" aria-selected="false">Eps3</a>
+				<a class="nav-link" id="episode3-tab" data-toggle="tab" href="#episode3" role="tab" aria-controls="episode3" aria-selected="false">Eps3<span class="badge bg-danger m-1">New!</span></a>
+				
 			</li>
 			<li class="nav-item" role="presentation">
 				<a class="nav-link" id="sub-tab" data-toggle="tab" href="#sub" role="tab" aria-controls="sub" aria-selected="false">字幕</a>
