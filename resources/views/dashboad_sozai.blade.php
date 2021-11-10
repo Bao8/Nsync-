@@ -8,7 +8,7 @@
 </ul>
 <div class="tab-content" id="myTabContent">
 	<div class="tab-pane fade show active mt-1" id="series" role="tabpanel" aria-labelledby="series-tab">
-		<div class="titleinfo ">
+		<div class="titleinfo">
 			<div class="row m-0">
 						<ul class="menu navbar nav-fill p-0 shadow col-md-12">
 							
@@ -85,9 +85,9 @@
 				</ul>
 				<div class="tab-content" id="myTab2Content">
 					<div class="tab-pane fade show active mt-1" id="basic" role="tabpanel" aria-labelledby="basic-tab">
-					<?php
-					  echo "Hello World";
-					?>
+
+						@include('dashboad_soozai_info')
+						
 					</div>
 					<div class="tab-pane fade mt-1" id="manage" role="tabpanel" aria-labelledby="manage-tab">
 					<?php

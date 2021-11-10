@@ -1,64 +1,10 @@
-	<div class="table-responsive">
-		<table class="table table-sm table-hover">
-		  <thead>
-			<tr>
-			  <th>タイトル</th>
-			  <th>エピソード名</th>
-			  <th>権利元</th>
-			  <th>コンテンツコード</th>
-			  <th>話数</th>
-			  <th>カテゴリ</th>
-			  <th>尺</th>
-			  <th>種類</th>
-			  <th>総話数</th>
-			  <th>シーズン情報</th>
-			  <th>ジャンル</th>
-			  <th>案件名</th>
-			</tr>
-		  </thead>
-		  <tbody>
-			<tr>
-			  <td>1,001</td>
-			  <td>Lorem</td>
-			  <td>ipsum</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			  <td>1,001</td>
-			  <td>Lorem</td>
-			  <td>ipsum</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			</tr>
-			<tr>
-			  <td>1,001</td>
-			  <td>Lorem</td>
-			  <td>ipsum</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			  <td>1,001</td>
-			  <td>Lorem</td>
-			  <td>ipsum</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			</tr>
-			<tr>
-			  <td>1,001</td>
-			  <td>Lorem</td>
-			  <td>ipsum</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			  <td>1,001</td>
-			  <td>Lorem</td>
-			  <td>ipsum</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			  <td>dolor</td>
-			  <td>sit</td>
-			</tr>
-		  </tbody>
-		</table>
-	  </div>
+<form>
+  <div class="mb-3">
+    <label for="episodeNo" class="form-label">エピソードNo.</label>
+    <input type="number" class="form-control" id="episodeNo" aria-describedby="" style="width:20%;">
+  </div>
+  <div class="mb-3">
+    <label for="episodeNo" class="form-label">エピソードNo.</label>
+    <input type="number" class="form-control" id="episodeNo" aria-describedby="" style="width:20%;">
+  </div>
+</form>
