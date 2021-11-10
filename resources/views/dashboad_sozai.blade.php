@@ -95,9 +95,9 @@
 
 					</div>
 					<div class="tab-pane fade mt-1" id="file" role="tabpanel" aria-labelledby="file-tab">
-					<?php
-					  echo "Hello World3";
-					?>
+					
+						@include('dashboad_soozai_movie')
+
 					</div>
 					<div class="tab-pane fade mt-1" id="image" role="tabpanel" aria-labelledby="image-tab">
 					<?php

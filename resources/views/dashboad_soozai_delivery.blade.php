@@ -2,7 +2,7 @@
 	<div class="col-md-1">
 		<button type="submit" class="btn btn-primary">更新</button>
 	</div>
-	<div class="col-md-1">
+	<div class="col-md-1" style="padding-left:0;">
 		<input type="reset" class="btn btn-warning" value="取消">
 	</div>	
 	<div class="w-100"></div>
@@ -16,7 +16,7 @@
     	<input type="date" class="form-control" id="returndate" aria-describedby="" value="">
  	</div>
 	<div class="col-12">
-		<label for="originalformat" class="form-label">形式</label>
+		<label for="originalformat" class="form-label">素材種別</label>
 		<input type="text" class="form-control" id="originalformat" aria-describedby="" value="">
 	</div>
 	<div class="col-12">
