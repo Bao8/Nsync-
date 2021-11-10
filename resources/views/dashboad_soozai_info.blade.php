@@ -1,4 +1,11 @@
 <form class="row g-3">
+	<div class="col-md-1">
+		<button type="submit" class="btn btn-primary">更新</button>
+	</div>
+	<div class="col-md-1">
+		<input type="reset" class="btn btn-warning" value="取消">
+	</div>	
+	<div class="w-100"></div>
 	<div class="col-12">
     	<label for="contentscode" class="form-label">コンテンツコード</label>
     	<input type="text" class="form-control" id="contentscode" aria-describedby="" value="VCJPA10000066899">
@@ -7,7 +14,7 @@
 		<label for="episodeNo" class="form-label">エピソードNo.</label>		
 		<input type="number" class="form-control" id="episodeNo" aria-describedby="" value="1">
 	</div>
-	<div class="col-md-9">
+	<div class="col-12">
 		<label for="episodetitle" class="form-label">エピソードタイトル</label>
 		<input type="text" class="form-control" id="episodetitle" aria-describedby="" value="3分間で、竹製耳かき">
 	</div>
@@ -28,7 +35,7 @@
 		</select>
 	</div>
 	<div class="w-100"></div>
-	<div class="col-md-6">
+	<div class="col-md-4">
 		<label for="category" class="form-label">カテゴリ</label>
 		<select id="category" class="form-select">
 			<option selected>邦画</option>
@@ -40,7 +47,7 @@
 		</select>
 	</div>
 	<div class="w-100"></div>
-	<div class="col-md-6">
+	<div class="col-md-4">
 		<label for="matter" class="form-label">案件</label>
 		<select id="matter" class="form-select">
 			<option selected>Amazon</option>

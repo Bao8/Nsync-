@@ -90,9 +90,9 @@
 						
 					</div>
 					<div class="tab-pane fade mt-1" id="manage" role="tabpanel" aria-labelledby="manage-tab">
-					<?php
-					  echo "Hello World2";
-					?>
+					
+						@include('dashboad_soozai_delivery')
+
 					</div>
 					<div class="tab-pane fade mt-1" id="file" role="tabpanel" aria-labelledby="file-tab">
 					<?php
