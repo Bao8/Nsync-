@@ -7,6 +7,10 @@
 	</div>	
 	<div class="w-100"></div>
 	<div class="col-12">
+    	<label for="contentscode" class="form-label">シリーズコンテンツコード</label>
+    	<input type="text" class="form-control" id="contentscode" aria-describedby="" value="VFJPA10000063894">
+ 	</div>
+	<div class="col-12">
     	<label for="contentscode" class="form-label">コンテンツコード</label>
     	<input type="text" class="form-control" id="contentscode" aria-describedby="" value="VCJPA10000066899">
  	</div>
