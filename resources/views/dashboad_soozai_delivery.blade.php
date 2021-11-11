@@ -27,6 +27,10 @@
 		<label for="storagelocation" class="form-label">保管場所</label>
 		<input type="text" class="form-control" id="storagelocation" aria-describedby="" value="">
 	</div>
+	<div class="col-12">
+		<label for="storagelocation" class="form-label">返却先住所</label>
+		<input type="text" class="form-control" id="storagelocation" aria-describedby="" value="">
+	</div>
 	<div class="col-md-6">
 		<label for="tracking" class="form-label">伝票番号</label>
 		<input type="text" class="form-control" id="tracking" aria-describedby="" value="">
