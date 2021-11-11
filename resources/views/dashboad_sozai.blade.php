@@ -10,14 +10,15 @@
 	<div class="tab-pane fade show active mt-1" id="series" role="tabpanel" aria-labelledby="series-tab">
 		<div class="titleinfo">
 			<div class="row m-0">
-						<ul class="menu navbar nav-fill p-0 shadow col-md-12">
+						<ul class="menu navbar nav-fill p-0 col-md-12">
 							
 							<li><p class="title m-0 border" href="#">銀の匙　Silver Spoon</p>
 							</li>
 							<li><p class="title m-0 border" href="#">VFJPA10000063894</p></li>
 
 						</ul>
-						<div class="photo col-md-6 p-1 shadow">
+						<div class="photo col-md-6 p-1">
+							<p>総話数</p>
 							<p>案件</p>
 							<div class="form-check">
 							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -25,9 +26,9 @@
 								Default checkbox1
 							  </label>
 							</div>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
 						</div>
-							<div class="infomation col-md-6 p-1 shadow">
+							<div class="infomation col-md-6 p-1">
 							<p>担当</p>
 							<ul>
 								<span class="badge bg-primary">平沼</span>

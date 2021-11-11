@@ -84,4 +84,28 @@
 	<div class="col-12">
 		<a href="" class="form-label">納品書リンク</a>
 	</div>
+	<div class="col-md-4">
+		<label for="responsibleperson" class="form-label">先方担当者</label>
+		<input type="text" class="form-control" id="responsibleperson" aria-describedby="" value="">
+	</div>
+	<div class="col-md-4">
+		<label for="contactnumber" class="form-label">電話番号</label>
+		<input type="tel" class="form-control" id="contactnumber" aria-describedby="" value="">
+	</div>
+	<div class="col-md-4">
+		<label for="contactemail" class="form-label">E-Mail</label>
+		<input type="email" class="form-control" id="contactemail" aria-describedby="" value="">
+	</div>
+	<div class="col-12">
+		<label for="contactaddress" class="form-label">連絡先住所</label>
+		<input type="text" class="form-control" id="contactaddress" aria-describedby="" value="">
+	</div>
+	<div class="col-12">
+		<label for="deliveryrule" class="form-label">納品先別規定</label>
+		<input type="text" class="form-control" id="deliveryrule" aria-describedby="" value="">
+ 	</div>
+	 <div class="col-12">
+		<label for="deliverycaution" class="form-label">納品先別注意事項</label>
+  		<textarea class="form-control" id="deliverycaution" rows="3"></textarea>
+ 	</div>
 </form>

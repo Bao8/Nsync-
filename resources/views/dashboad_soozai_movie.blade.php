@@ -42,12 +42,12 @@
 		</select>
 	</div>
 	<div class="col-md-6">
-		<label for="moviebitrate" class="form-label">映像ビットレート</label>
-		<input type="number" class="form-control" id="moviebitrate" aria-describedby="" value="">
+		<label for="moviebitrate" class="form-label">映像ビットレート kbps</label>
+		<input type="number" class="form-control" id="moviebitrate" aria-describedby="" value="10000">
 	</div>
 	<div class="col-md-6">
-		<label for="audiobitrate" class="form-label">音声ビットレート</label>
-		<input type="number" class="form-control" id="audiobitrate" aria-describedby="" value="">
+		<label for="audiobitrate" class="form-label">音声ビットレート kbps</label>
+		<input type="number" class="form-control" id="audiobitrate" aria-describedby="" value="128">
 	</div>
 	<div class="col-md-6">
 		<label for="audiochannel" class="form-label">音声チャンネル</label>
