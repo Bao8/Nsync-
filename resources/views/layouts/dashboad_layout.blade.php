@@ -10,13 +10,12 @@
 	  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard-sideber.css') }}">
-
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.0.0/velocity.min.js"></script>
     <script type="text/javascript">
-    (function($) {
         $(function () {
             $('.nav-item > a').on('click', function (e) {
                 e.preventDefault();
@@ -66,6 +65,7 @@
     {{--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script>
+	
       var ctx = document.getElementById("myChart");
       var myChart = new Chart(ctx, {
         type: 'line',
@@ -97,19 +97,10 @@
     </script>
     --}}
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>
       window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    {{--
-    <script src="/docs/4.3/assets/js/vendor/anchor.min.js"></script>
-    <script src="/docs/4.3/assets/js/vendor/clipboard.min.js"></script>
-    <script src="/docs/4.3/assets/js/vendor/bs-custom-file-input.min.js"></script>
-    <script src="/docs/4.3/assets/js/src/application.js"></script>
-    <script src="/docs/4.3/assets/js/src/search.js"></script>
-    <script src="/docs/4.3/assets/js/src/ie-emulation-modes-warning.js"></script>
-    --}}
   </body>
 </html>
