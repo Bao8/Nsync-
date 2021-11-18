@@ -112,18 +112,15 @@ ul.menu:after { /*Clearfix*/
 /* 素材管理 */
 
 .titleinfo {
-	height:250px;
+	height:330px;
 	margin-top:0.25em;
+  /* background-color: #EEEEEE; */
 }
 
-.photo{
-	/* background-color:gray; */
-	height:150px;
-}
 
 .infomation {
 	/* background-color:pink; */
-	height:150px;
+	/* height:150px; */
 }
 
 .tab-area {
@@ -140,7 +137,6 @@ ul.menu:after { /*Clearfix*/
 
 .title {
 	color:#000;
-	text-align:center;
-	padding:5px;
-	font-size:2em;
+	font-size:2.5em;
+  font-weight: bold;
 }

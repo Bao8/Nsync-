@@ -6,41 +6,80 @@
 		<a class="nav-link active" id="series-tab" data-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="true">Series<span class="badge bg-danger m-1">6</span></a>
 	</li>
 </ul>
-<div class="tab-content" id="myTabContent">
+<div class="tab-content border" id="myTabContent">
 	<div class="tab-pane fade show active mt-1" id="series" role="tabpanel" aria-labelledby="series-tab">
-		<div class="titleinfo">
-			<div class="row m-0">
-						<ul class="menu navbar nav-fill p-0 col-md-12">
-							
-							<li><p class="title m-0 border" href="#">銀の匙　Silver Spoon</p>
-							</li>
-							<li><p class="title m-0 border" href="#">VFJPA10000063894</p></li>
-
-						</ul>
-						<div class="photo col-md-6 p-1">
-							<p>総話数</p>
-							<p>案件</p>
-							<div class="form-check">
-							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-							  <label class="form-check-label" for="defaultCheck1">
-								Default checkbox1
-							  </label>
+		<div class="container titleinfo mb-2 pt-1">
+					<div class="mt-2">
+						<h2 class="title">銀の匙　Silver Spoon</h2>
+					</div>
+			<div class="row infomation">
+				<div class="col-7 flex-coloum">
+					
+					<div class="row mt-2">
+						<div class="col-6">
+							<label for="kenrimoto" class="form-label m-0 font-weight-bold">権利元</label>
+							<input type="text" class="form-control" id="kenrimoto" placeholder="" aria-label="権利元">
+						</div>
+						<div class="col-6">
+							<label for="janru" class="form-label m-0 font-weight-bold">ジャンル</label>
+							<select id="janru" class="form-select">
+								<option selected>選択</option>
+								<option>ホラー</option>
+								<option>コメディー</option>
+								<option>ロマンス</option>
+								<option>アクション</option>
+								<option>ファンタジー</option>
+							</select>
+						</div>
+						<div class="col-6 mt-2">
+							<label for="category" class="form-label m-0 font-weight-bold">カテゴリ</label>
+							<select id="category" class="form-select">
+								<option selected>選択</option>
+								<option>邦画</option>
+								<option>洋画</option>
+								<option>国内ドラマ</option>
+								<option>海外ドラマ</option>
+								<option>アニメ</option>
+								<option>海外アニメ</option>
+								<option>バラエティ</option>
+							</select>
+						</div>
+						<div class="col-6 mt-2">
+							<label for="kenrimoto" class="form-label m-0 font-weight-bold">コンテンツコード</label>
+							<input type="text" class="form-control" id="kenrimoto" placeholder="" aria-label="コンテンツコード">
+						</div>
+						<div class="col mt-2 ">
+							<label for="seriesinfo" class="form-label mb-0 font-weight-bold">備考</label>
+							<textarea class="form-control" id="seriesinfo" rows="2"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="col-5 pt-2">
+					<label for="sintyoku" class="form-label m-0 font-weight-bold">作業進捗度</label>
+						<div id="sintyoku">
+							<div class="mt-2">
+								<label for="jimaku" class="form-label m-0">字幕</label>
+								<div class="progress m-1" id="jimaku">
+									<div class="shadow text-reset progress-bar progress-bar-animated bg-info progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+								</div>
 							</div>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+							<div class="mt-2">
+								<label for="hukikae" class="form-label m-0">吹替</label>
+								<div class="progress m-1" id="hukikae">
+									<div class="text-reset progress-bar progress-bar-animated bg-info progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+								</div>
+							</div>
+							<div class="mt-2">
+								<label for="yokoku" class="form-label m-0">予告</label>
+								<div class="progress m-1" id="yokoku">
+									<div class="text-reset progress-bar progress-bar-animated bg-info progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+								</div>
+							</div>
 						</div>
-							<div class="infomation col-md-6 p-1">
-							<p>担当</p>
-							<ul>
-								<span class="badge bg-primary">平沼</span>
-								<span class="badge bg-success">坂口</span>
-								<span class="badge bg-warning text-dark">西田</span>
-								<span class="badge bg-info text-dark">大場</span>
-							</ul>
-							<input type="file" class="form-control-file" id="exampleFormControlFile1">
-						</div>
-			</div>
+				</div>
 			</div>
 		</div>
+	</div>	
 		<ul class="nav nav-tabs tab-menu nav-pills" id="myTab" role="tablist">
 			<li class="nav-item" role="presentation">
 				<a class="nav-link active" id="episode1-tab" data-toggle="tab" href="#episode1" role="tab" aria-controls="episode1" aria-selected="true">Eps1</a>
