@@ -20,7 +20,11 @@
 							<label for="kenrimoto" class="form-label m-0 font-weight-bold">権利元</label>
 							<input type="text" class="form-control" id="kenrimoto" placeholder="" aria-label="権利元">
 						</div>
-						<div class="col-6">
+						<div class="col-6 mt-2">
+							<label for="kenrimoto" class="form-label m-0 font-weight-bold">コンテンツコード</label>
+							<input type="text" class="form-control" id="kenrimoto" placeholder="" aria-label="コンテンツコード">
+						</div>
+						<div class="col-6 mt-2">
 							<label for="janru" class="form-label m-0 font-weight-bold">ジャンル</label>
 							<select id="janru" class="form-select">
 								<option selected>選択</option>
@@ -44,16 +48,14 @@
 								<option>バラエティ</option>
 							</select>
 						</div>
-						<div class="col-6 mt-2">
-							<label for="kenrimoto" class="form-label m-0 font-weight-bold">コンテンツコード</label>
-							<input type="text" class="form-control" id="kenrimoto" placeholder="" aria-label="コンテンツコード">
-						</div>
 						<div class="col mt-2 ">
 							<label for="seriesinfo" class="form-label mb-0 font-weight-bold">備考</label>
 							<textarea class="form-control" id="seriesinfo" rows="2"></textarea>
 						</div>
 					</div>
 				</div>
+				
+				<!-- 一旦消し
 				<div class="col-5 pt-2">
 					<label for="sintyoku" class="form-label m-0 font-weight-bold">作業進捗度</label>
 						<div id="sintyoku">
@@ -77,6 +79,7 @@
 							</div>
 						</div>
 				</div>
+				-->
 			</div>
 		</div>
 	</div>	
