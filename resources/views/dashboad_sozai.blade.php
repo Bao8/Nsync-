@@ -13,10 +13,10 @@
 						<h2 class="title">銀の匙　Silver Spoon</h2>
 					</div>
 			<div class="row infomation">
-				<div class="col-7 flex-coloum">
+				<div class="col-12 flex-coloum">
 					
-					<div class="row mt-2">
-						<div class="col-6">
+					<div class="row">
+						<div class="col-6 mt-2">
 							<label for="kenrimoto" class="form-label m-0 font-weight-bold">権利元</label>
 							<input type="text" class="form-control" id="kenrimoto" placeholder="" aria-label="権利元">
 						</div>
