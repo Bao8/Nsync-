@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UploadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,5 @@ Route::get('/index', function () {
 Route::get('/Nsync_layout', function () {
     return view('Nsync_layout');
 });
+
+Route::post('/upload', [UploadController::class, 'store']);

@@ -8,7 +8,7 @@
 	<div class="w-100"></div>
 	<div class="col-md-6">
     	<label for="movieformat" class="form-label">フォーマット</label>
-    	<input type="text" class="form-control" id="movieformat" aria-describedby="" value="">
+    	<input type="text" class="form-control" id="movieformat" aria-describedby="" value="mov">
  	</div>
 	 <div class="w-100"></div>
 	 <div class="col-md-6">
@@ -18,7 +18,15 @@
 			<option>720x480</option>
 		</select>
 	</div>
-	<div class="w-100"></div>
+	<div class="col-md-6">
+		<label for="resolution" class="form-label">比率</label>
+		<select id="resolution" class="form-select">
+			<option selected>16:9</option>
+			<option>4:3</option>
+			<option>4:3 LB</option>
+			<option>4:3 SQ</option>
+		</select>
+	</div>
 	<div class="col-md-6">
 		<label for="nativefps" class="form-label">FPS＜ネイティブ＞</label>
 		<select id="nativefps" class="form-select">
@@ -59,7 +67,7 @@
 		</select>
 	</div>
 	<div class="w-100"></div>
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<label for="length" class="form-label">長さ</label>		
 		<input type="text" class="form-control" id="length" aria-describedby="" value="0:03:29">		
 	</div>

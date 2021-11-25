@@ -6,7 +6,7 @@
 		<a class="nav-link active" id="series-tab" data-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="true">Series<span class="badge bg-danger m-1">6</span></a>
 	</li>
 </ul>
-<div class="tab-content border" id="myTabContent">
+<div class="tab-content" id="myTabContent">
 	<div class="tab-pane fade show active mt-1" id="series" role="tabpanel" aria-labelledby="series-tab">
 		<div class="container titleinfo mb-2 pt-1">
 					<div class="mt-2">
@@ -143,14 +143,14 @@
 
 					</div>
 					<div class="tab-pane fade mt-1" id="image" role="tabpanel" aria-labelledby="image-tab">
-					<?php
-					  echo "Hello World4";
-					?>
+					
+						@include('dashboad_soozai_thumb')
+
 					</div>
 					<div class="tab-pane fade mt-1" id="meta" role="tabpanel" aria-labelledby="meta-tab">
-					<?php
-					  echo "Hello World5";
-					?>
+					
+						@include('dashboad_soozai_LTO')
+
 					</div>
 					<div class="tab-pane fade mt-1" id="lto" role="tabpanel" aria-labelledby="lto-tab">
 					<?php
