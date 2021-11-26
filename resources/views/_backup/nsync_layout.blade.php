@@ -48,7 +48,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        @extends('layouts.dashboad_sideber_layout')
+        @extends('layouts.sidebar')
 		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         @yield('content')
 		</main>

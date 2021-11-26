@@ -1,0 +1,131 @@
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 133px; /* Space for fixed navbar */
+}
+
+@media (min-width: 768px) {
+  [role="main"] {
+    padding-top: 48px; /* Space for fixed navbar */
+  }
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .80rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  height:100%;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+/* ul.menu {
+	height:50px;
+}
+
+ul.menu li {
+  float: left;  /*メインメニューは横並びに*/
+  width: 50%;
+  height:100%;
+  position: relative;  /*子要素の基準とするために指定*/
+  list-style-type: none;
+  box-sizing:border-box;
+}
+ul.menu li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+ul.menu li a:hover {
+	color:#fff;
+  /*background-color: rgba(255, 255, 255, .1);; */
+}
+ul.menu li ul.sub {
+  display: none;
+  position: absolute;
+  /*サブメニューを開いた際に、背後の要素の影響を受けないようにする*/
+  padding: 0;
+  margin: 0;
+}
+ 
+ul.menu li:hover ul.sub {
+  display: block; 
+}
+ 
+ul.menu li ul.sub li:first-child{
+  border-top: 1px solid #1C2973; /*最初の要素のみボーダートップを指定*/
+}
+ul.menu li ul.sub li {
+  border: 1px solid #1C2973;  /*ボーダーの指定*/
+  border-top: none;  /*ボーダートップは重なって太くなるので解除*/
+}
+ul.menu {
+ zoom:1; /*Clearfix IE6-7 対応*/
+}
+ul.menu:after { /*Clearfix*/
+  height:0;
+  visibility:hidden;
+  content:".";
+  display:block;
+  clear:both;
+} */
+
+/* 素材管理 */
+
+.titleinfo {
+	height:330px;
+	margin-top:0.25em;
+  /* background-color: #EEEEEE; */
+}
+
+
+.infomation {
+	/* background-color:pink; */
+	/* height:150px; */
+}
+
+.tab-area {
+	/* overflow-x:scroll; */
+	/* overflow-y:hidden; */
+	/* flex-wrap: nowrap; */
+}
+
+.tab-menu {
+	overflow-x:scroll;
+	overflow-y:hidden;
+	flex-wrap: nowrap;
+}
+
+.title {
+	color:#000;
+	font-size:2.5em;
+  font-weight: bold;
+}
+
+.dd_link:hover {
+  background-color:#343a40;
+}
+

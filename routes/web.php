@@ -14,32 +14,39 @@ use App\Http\Controllers\UploadController;
 |
 */
 
-Route::get('/dashboad_others', function () {
-    return view('dashboad_others');
-});
+// Route::get('/app', function () {
+//     return view('app');
+// });
 
-Route::get('/dashboad_home', function () {
-    return view('dashboad_home');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// });
 
-Route::get('/dashboad_meta', function () {
-    return view('dashboad_meta');
-});
+// Route::get('/contents', function () {
+//     return view('contents');
+// });
 
-Route::get('/dashboad_restore', function () {
-    return view('dashboad_restore');
-});
+// Route::get('/others', function () {
+//     return view('others');
+// });
 
-Route::get('/dashboad_sozai', function () {
-    return view('dashboad_sozai');
-});
+// Route::get('/meta', function () {
+//     return view('meta');
+// });
 
-Route::get('/index', function () {
-    return view('index');
-});
+// Route::get('/restore', function () {
+//     return view('restore');
+// });
 
-Route::get('/Nsync_layout', function () {
-    return view('Nsync_layout');
-});
+
 
 Route::post('/upload', [UploadController::class, 'store']);
+
+Auth::routes();
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+Route::get('/contents', [App\Http\Controllers\HomeController::class, 'contents'])->name('contents');
+Route::get('/meta', [App\Http\Controllers\HomeController::class, 'meta'])->name('meta');
+Route::get('/restore', [App\Http\Controllers\HomeController::class, 'restore'])->name('restore');
+Route::get('/others', [App\Http\Controllers\HomeController::class, 'others'])->name('others');

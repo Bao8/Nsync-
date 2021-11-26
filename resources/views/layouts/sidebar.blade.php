@@ -9,20 +9,20 @@
 			</a>
 			<ul class="nav-sub">
 				<li>
-					<a class="nav-link" href="dashboad_home">トップリスト</a>
+					<a class="nav-link" href="home">トップリスト</a>
 				</li>
 				<li>
-					<a class="nav-link" href="dashboad_sozai">今日の納品</a>
+					<a class="nav-link" href="contents">今日の納品</a>
 				</li>
 				<li>
-					<a class="nav-link" href="dashboad_home">詳細検索</a>
+					<a class="nav-link" href="home">詳細検索</a>
 				</li>
 				{{--
 				<li>
-					<a class="nav-link" href="dashboad_sozai">素材管理</a>
+					<a class="nav-link" href="contents">素材管理</a>
 				</li>
 				<li>
-					<a class="nav-link" href="dashboad_meta">メタ管理</a>
+					<a class="nav-link" href="meta">メタ管理</a>
 				</li>
 				<li>
 					<a class="nav-link" href="#">資料データ管理</a>
@@ -39,10 +39,10 @@
 			</a>
 			<ul class="nav-sub">
 				<li>
-					<a class="nav-link" href="dashboad_home">保存依頼</a>
+					<a class="nav-link" href="home">保存依頼</a>
 				</li>
 				<li>
-					<a class="nav-link" href="dashboad_home">リストア依頼</a>
+					<a class="nav-link" href="home">リストア依頼</a>
 				</li>				
 			</ul>
 		</li>
