@@ -55,10 +55,16 @@
 		</select>
 	</div>
 	<div class="col-md-6">
-    	<label for="genre" class="form-label">ジャンル</label>
-    	<input type="text" class="form-control" id="genre" aria-describedby="" value="">
- 	</div>
-	 <div class="w-100"></div>
+		<label for="category" class="form-label">カテゴリ</label>
+		<select id="category" class="form-select">			
+			<option selected>ホラー</option>
+			<option>コメディー</option>
+			<option>ロマンス</option>
+			<option>アクション</option>
+			<option>ファンタジー</option>
+		</select>
+	</div>
+	<div class="w-100"></div>
 	<div class="col-md-6">
 		<label for="matter" class="form-label">案件</label>
 		<select id="matter" class="form-select">
@@ -69,7 +75,6 @@
 			<option>TVer</option>
 		</select>
 	</div>
-	<div class="w-100"></div>
 	<div class="col-md-6">
     	<label for="onairdate" class="form-label">配信開始日</label>
     	<input type="date" class="form-control" id="onairdate" aria-describedby="" value="20211201">

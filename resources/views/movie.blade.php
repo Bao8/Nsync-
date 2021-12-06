@@ -28,15 +28,17 @@
 		</select>
 	</div>
 	<div class="col-md-6">
-		<label for="nativefps" class="form-label">FPS＜ネイティブ＞</label>
-		<select id="nativefps" class="form-select">
-			<option>60</option>
-			<option>59.97</option>
-			<option>30</option>
-			<option selected>29.97</option>
-			<option>25</option>
-			<option>23.976</option>
-		</select>
+		<label for="nativefps" class="form-label">FPS</label>
+		<div class="form-floating mb-3">
+			<select id="nativefps" class="form-select">
+				<option>60</option>
+				<option>59.97</option>
+				<option>30</option>
+				<option selected>29.97</option>
+				<option>25</option>
+				<option>23.976</option>
+			</select>
+		</div>
 	</div>
 	<div class="col-md-6">
 		<label for="encodefps" class="form-label">FPS＜エンコード＞</label>
@@ -50,12 +52,18 @@
 		</select>
 	</div>
 	<div class="col-md-6">
-		<label for="moviebitrate" class="form-label">映像ビットレート kbps</label>
-		<input type="number" class="form-control" id="moviebitrate" aria-describedby="" value="10000">
+		<label for="moviebitrate" class="form-label">映像ビットレート</label>
+			<div class="input-group">
+				<input type="number" class="form-control" aria-describedby="moviebitrate" value="10000">
+				<span class="input-group-text" id="moviebitrate">kbps</span>
+			</div>
 	</div>
 	<div class="col-md-6">
-		<label for="audiobitrate" class="form-label">音声ビットレート kbps</label>
-		<input type="number" class="form-control" id="audiobitrate" aria-describedby="" value="128">
+		<label for="audiobitrate" class="form-label">音声ビットレート</label>
+			<div class="input-group">
+				<input type="number" class="form-control" aria-describedby="audiobitrate" value="128">
+				<span class="input-group-text" id="audiobitrate">kbps</span>
+			</div>
 	</div>
 	<div class="col-md-6">
 		<label for="audiochannel" class="form-label">音声チャンネル</label>
