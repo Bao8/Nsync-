@@ -15,27 +15,27 @@
 
     <div class="col-md-6">
 		<label for="thumb-category" class="form-label">種類</label>
-		<select id="thumb-category" class="form-select">
-			<option selected>場面写</option>
-			<option>ロゴ</option>
-			<option>キービジュアル</option>
+		<select id="thumb-category" class="form-select" name="thumb-category">
+			<option value="bamen" selected>場面写</option>
+			<option value="logo">ロゴ</option>
+			<option value="keyvisual">キービジュアル</option>
 		</select>
 	</div>    
     <div class="col-md-6">
 		<label for="thumb-copyright" class="form-label">コピーライト</label>		
-		<input type="text" class="form-control" id="thumb-copyright" aria-describedby="" value="">		
+		<input type="text" class="form-control" id="thumb-copyright" aria-describedby="" value="" name="thumb-copyright">		
 	</div>
     <div class="col-12">
 		<label for="thumb-filename" class="form-label">ファイル名</label>		
-		<input type="text" class="form-control" id="thumb-filename" aria-describedby="" value="">		
+		<input type="text" class="form-control" id="thumb-filename" aria-describedby="" value="" name="thumb-filename">		
 	</div>
     <div class="col-md-6">
 		<label for="thumb-delivery" class="form-label">納品先</label>		
-		<input type="text" class="form-control" id="thumb-delivery" aria-describedby="" value="">		
+		<input type="text" class="form-control" id="thumb-delivery" aria-describedby="" value="" name="thumb-delivery">		
 	</div>
     <div class="col-md-6">
 		<label for="thumb-method" class="form-label">使用方法</label>		
-		<input type="text" class="form-control" id="thumb-method" aria-describedby="" value="">		
+		<input type="text" class="form-control" id="thumb-method" aria-describedby="" value="" name="thumb-method">		
 	</div>
 
     <img class="float-md-end col-md-6" src=" {{ asset('storage/thumb/test.png')}}">
@@ -52,27 +52,27 @@
 
     <div class="col-md-6">
 		<label for="thumb-category" class="form-label">種類</label>
-		<select id="thumb-category" class="form-select">
-			<option>場面写</option>
-			<option selected>ロゴ</option>
-			<option>キービジュアル</option>
+		<select id="thumb-category" class="form-select" name="thumb-category">
+			<option value="bamen" selected>場面写</option>
+			<option value="logo">ロゴ</option>
+			<option value="keyvisual">キービジュアル</option>
 		</select>
 	</div>    
     <div class="col-md-6">
 		<label for="thumb-copyright" class="form-label">コピーライト</label>		
-		<input type="text" class="form-control" id="thumb-copyright" aria-describedby="" value="">		
+		<input type="text" class="form-control" id="thumb-copyright" aria-describedby="" value="" name="thumb-copyright">		
 	</div>
     <div class="col-12">
 		<label for="thumb-filename" class="form-label">ファイル名</label>		
-		<input type="text" class="form-control" id="thumb-filename" aria-describedby="" value="">		
+		<input type="text" class="form-control" id="thumb-filename" aria-describedby="" value="" name="thumb-filename">		
 	</div>
     <div class="col-md-6">
 		<label for="thumb-delivery" class="form-label">納品先</label>		
-		<input type="text" class="form-control" id="thumb-delivery" aria-describedby="" value="">		
+		<input type="text" class="form-control" id="thumb-delivery" aria-describedby="" value="" name="thumb-delivery">		
 	</div>
     <div class="col-md-6">
 		<label for="thumb-method" class="form-label">使用方法</label>		
-		<input type="text" class="form-control" id="thumb-method" aria-describedby="" value="">		
+		<input type="text" class="form-control" id="thumb-method" aria-describedby="" value="" name="thumb-method">		
 	</div>
 
     <img class="float-md-end col-md-6" src=" {{ asset('storage/thumb/test.png')}}">

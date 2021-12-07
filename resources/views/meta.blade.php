@@ -1,148 +1,104 @@
-@extends('layouts.app')
-
-@section('content')
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">メタ</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group mr-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-              </div>
-              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                <span data-feather="calendar"></span>
-                This week
-              </button>
-            </div>
-          </div>
-
-          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
-      <h2>Section title</h2>
-      <div class="table-responsive">
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1,001</td>
-              <td>Lorem</td>
-              <td>ipsum</td>
-              <td>dolor</td>
-              <td>sit</td>
-            </tr>
-            <tr>
-              <td>1,002</td>
-              <td>amet</td>
-              <td>consectetur</td>
-              <td>adipiscing</td>
-              <td>elit</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>Integer</td>
-              <td>nec</td>
-              <td>odio</td>
-              <td>Praesent</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>libero</td>
-              <td>Sed</td>
-              <td>cursus</td>
-              <td>ante</td>
-            </tr>
-            <tr>
-              <td>1,004</td>
-              <td>dapibus</td>
-              <td>diam</td>
-              <td>Sed</td>
-              <td>nisi</td>
-            </tr>
-            <tr>
-              <td>1,005</td>
-              <td>Nulla</td>
-              <td>quis</td>
-              <td>sem</td>
-              <td>at</td>
-            </tr>
-            <tr>
-              <td>1,006</td>
-              <td>nibh</td>
-              <td>elementum</td>
-              <td>imperdiet</td>
-              <td>Duis</td>
-            </tr>
-            <tr>
-              <td>1,007</td>
-              <td>sagittis</td>
-              <td>ipsum</td>
-              <td>Praesent</td>
-              <td>mauris</td>
-            </tr>
-            <tr>
-              <td>1,008</td>
-              <td>Fusce</td>
-              <td>nec</td>
-              <td>tellus</td>
-              <td>sed</td>
-            </tr>
-            <tr>
-              <td>1,009</td>
-              <td>augue</td>
-              <td>semper</td>
-              <td>porta</td>
-              <td>Mauris</td>
-            </tr>
-            <tr>
-              <td>1,010</td>
-              <td>massa</td>
-              <td>Vestibulum</td>
-              <td>lacinia</td>
-              <td>arcu</td>
-            </tr>
-            <tr>
-              <td>1,011</td>
-              <td>eget</td>
-              <td>nulla</td>
-              <td>Class</td>
-              <td>aptent</td>
-            </tr>
-            <tr>
-              <td>1,012</td>
-              <td>taciti</td>
-              <td>sociosqu</td>
-              <td>ad</td>
-              <td>litora</td>
-            </tr>
-            <tr>
-              <td>1,013</td>
-              <td>torquent</td>
-              <td>per</td>
-              <td>conubia</td>
-              <td>nostra</td>
-            </tr>
-            <tr>
-              <td>1,014</td>
-              <td>per</td>
-              <td>inceptos</td>
-              <td>himenaeos</td>
-              <td>Curabitur</td>
-            </tr>
-            <tr>
-              <td>1,015</td>
-              <td>sodales</td>
-              <td>ligula</td>
-              <td>in</td>
-              <td>libero</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-@endsection
+<form class="row g-3">
+	<div class="col-md-1">
+		<button type="submit" class="btn btn-primary">更新</button>
+	</div>
+	<div class="col-md-1" style="padding-left:0;">
+		<input type="reset" class="btn btn-warning" value="取消">
+	</div>	
+	<div class="w-100"></div>
+	<div class="col-md-12">
+		<label for="title" class="form-label">作品名</label>
+		<input type="text" class="form-control" id="title" aria-describedby="" value="" name="title">
+	</div>
+  <div class="col-md-12">
+		<label for="en-title" class="form-label">作品名（原題）</label>
+		<input type="text" class="form-control" id="en-title" aria-describedby="" value="" name="en-title">
+	</div>
+	<div class="col-md-12">
+		<label for="copyright" class="form-label">コピーライト</label>
+		<input type="text" class="form-control" id="copyright" aria-describedby="" value="" name="copyright">
+	</div>
+	<div class="col-md-12">
+		<label for="langauge" class="form-label">使用言語</label>
+		<select id="langauge" class="form-select" name="langauge">
+			<option selected>選択</option>
+			<option value="ja">日本</option>
+			<option value="en">アメリカ</option>
+		</select>
+	</div>
+	<div class="col-md-12">
+		<label for="country" class="form-label">制作国</label>
+		<input type="text" class="form-control" id="country" aria-describedby="" value="" name="country">
+	</div>
+	<div class="col-md-12">
+    	<label for="createyear" class="form-label">制作年</label>
+    	<input type="number" class="form-control" id="createyear" aria-describedby="" value="2020" name="createyear">
+ 	</div>
+   <div class="col-md-12">
+    <label for="genre" class="form-label">ジャンル</label>
+    <select id="genre" class="form-select" name="genre">			
+      <option value="horror" selected>ホラー</option>
+      <option value="comedy">コメディー</option>
+      <option value="romance">ロマンス</option>
+      <option value="action">アクション</option>
+      <option value="fantasy">ファンタジー</option>
+    </select>
+  </div>
+	<div class="col-md-12">
+    	<label for="raiting" class="form-label">レイティング</label>
+    	<select id="raiting" class="form-select" name="raiting">
+			<option selected>選択</option>
+			<option value="g">G</option>
+			<option value="r15">ERIN｜R15</option>
+			<option value="r18">ERIN｜R18</option>
+		</select>
+ 	</div>
+	<div class="col-md-12">
+		<label for="catchcopy" class="form-label">キャッチコピー</label>
+		<textarea class="form-control" id="catchcopy" rows="2" name="catchcopy"></textarea>
+	</div>
+	<div class="col-md-12">
+		<label for="commentary" class="form-label">解説</label>
+		<textarea class="form-control" id="commentary" rows="3" name="commentary"></textarea>
+	</div>
+	<div class="col-md-12">
+		<label for="synopsis" class="form-label">あらすじ</label>
+		<textarea class="form-control" id="synopsis" rows="3" name="synopsis"></textarea>
+	</div>
+	<div class="col-md-12">
+		<label for="director" class="form-label">監督</label>
+		<input type="text" class="form-control" id="director" aria-describedby="" value="" name="director">
+	</div>
+	<div class="col-md-12">
+		<label for="screenwriter" class="form-label">脚本</label>
+		<input type="text" class="form-control" id="screenwriter" aria-describedby="" value="" name="screenwriter">
+	</div>
+	<div class="col-md-12">
+    <label for="producer" class="form-label">プロデューサー</label>
+		<input type="text" class="form-control" id="producer" aria-describedby="" value="" name="producer">
+	</div>
+	<div class="col-md-12">
+    <label for="writer" class="form-label">原作</label>
+		<input type="text" class="form-control" id="writer" aria-describedby="" value="" name="writer">
+	</div>
+  <div class="col-md-12">
+    <label for="cast" class="form-label">出演者</label>
+    <input type="text" class="form-control" id="cast" aria-describedby="" value="" name="cast">
+  </div>
+  <div class="col-md-12">
+    <label for="music" class="form-label">音楽</label>
+    <input type="text" class="form-control" id="music" aria-describedby="" value="" name="music">
+  </div>
+  <div class="col-md-12">
+    <label for="production" class="form-label">制作会社</label>
+    <input type="text" class="form-control" id="production" aria-describedby="" value="" name="production">
+  </div>
+  <div class="col-md-12">
+    <label for="staff" class="form-label">その他スタッフ</label>
+    <input type="text" class="form-control" id="staff" aria-describedby="" value="" name="staff">
+  </div>
+	<div class="col-12">
+		<label for="seriesinfo" class="form-label">シリーズ情報</label>
+		<textarea class="form-control" id="seriesinfo" rows="3" name="seriesinfo"></textarea>
+	</div>
+</form>

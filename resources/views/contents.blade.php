@@ -17,40 +17,40 @@
 					
 					<div class="row">
 						<div class="col-6 mt-2">
-							<label for="kenrimoto" class="form-label m-0 font-weight-bold">権利元</label>
-							<input type="text" class="form-control" id="kenrimoto" placeholder="" aria-label="権利元">
+							<label for="rightsource" class="form-label m-0 font-weight-bold">権利元</label>
+							<input type="text" class="form-control" id="rightsource"  name="rightsource">
 						</div>
 						<div class="col-6 mt-2">
-							<label for="kenrimoto" class="form-label m-0 font-weight-bold">コンテンツコード</label>
-							<input type="text" class="form-control" id="kenrimoto" placeholder="" aria-label="コンテンツコード">
+							<label for="contentscode" class="form-label m-0 font-weight-bold">コンテンツコード</label>
+							<input type="text" class="form-control" id="contentscode" name="contentscode">
 						</div>
 						<div class="col-6 mt-2">
-							<label for="janru" class="form-label m-0 font-weight-bold">ジャンル</label>
-							<select id="janru" class="form-select">
+							<label for="genre" class="form-label m-0 font-weight-bold">ジャンル</label>
+							<select id="genre" class="form-select" name="genre">
 								<option selected>選択</option>
-								<option>ホラー</option>
-								<option>コメディー</option>
-								<option>ロマンス</option>
-								<option>アクション</option>
-								<option>ファンタジー</option>
+								<option value="horror">ホラー</option>
+								<option value="comedy">コメディー</option>
+								<option value="romance">ロマンス</option>
+								<option value="action">アクション</option>
+								<option value="fantasy">ファンタジー</option>
 							</select>
 						</div>
 						<div class="col-6 mt-2">
 							<label for="category" class="form-label m-0 font-weight-bold">カテゴリ</label>
-							<select id="category" class="form-select">
+							<select id="category" class="form-select" name="category">
 								<option selected>選択</option>
-								<option>邦画</option>
-								<option>洋画</option>
-								<option>国内ドラマ</option>
-								<option>海外ドラマ</option>
-								<option>アニメ</option>
-								<option>海外アニメ</option>
-								<option>バラエティ</option>
+								<option value="original">邦画</option>
+								<option value="youga">洋画</option>
+								<option value="kokunaidorama">国内ドラマ</option>
+								<option value="kaigaidorama">海外ドラマ</option>
+								<option value="anime">アニメ</option>
+								<option value="kaigaianime">海外アニメ</option>
+								<option value="variety">バラエティ</option>
 							</select>
 						</div>
 						<div class="col mt-2 ">
 							<label for="seriesinfo" class="form-label mb-0 font-weight-bold">備考</label>
-							<textarea class="form-control" id="seriesinfo" rows="2"></textarea>
+							<textarea class="form-control" id="seriesinfo" rows="2" name="seriesinfo"></textarea>
 						</div>
 					</div>
 				</div>
@@ -149,13 +149,13 @@
 					</div>
 					<div class="tab-pane fade mt-1" id="meta" role="tabpanel" aria-labelledby="meta-tab">
 					
-						@include('LTO')
+						@include('meta')
 
 					</div>
 					<div class="tab-pane fade mt-1" id="lto" role="tabpanel" aria-labelledby="lto-tab">
-					<?php
-					  echo "Hello World6";
-					?>
+					
+						@include('LTO')
+					
 					</div>
 				</div>
 			</div>

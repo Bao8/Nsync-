@@ -58,7 +58,7 @@
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav col-10 p-0">
                         <form class="d-flex px-0" style="margin-left:auto;">
-                            <input class="form-control form-control-dark w-100 " type="text" placeholder="Search" aria-label="Search">
+                            <input class="form-control form-control-dark w-100 " type="text" placeholder="Search" aria-label="Search" name="search">
                             <button class="btn btn-outline-success mx-2" type="submit">Search</button>
                         </form>
                         </ul>
