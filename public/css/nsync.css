@@ -41,57 +41,6 @@ body {
   border-radius: 0;
 }
 
-/* ul.menu {
-	height:50px;
-}
-
-ul.menu li {
-  float: left;  /*メインメニューは横並びに*/
-  width: 50%;
-  height:100%;
-  position: relative;  /*子要素の基準とするために指定*/
-  list-style-type: none;
-  box-sizing:border-box;
-}
-ul.menu li a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
-ul.menu li a:hover {
-	color:#fff;
-  /*background-color: rgba(255, 255, 255, .1);; */
-}
-ul.menu li ul.sub {
-  display: none;
-  position: absolute;
-  /*サブメニューを開いた際に、背後の要素の影響を受けないようにする*/
-  padding: 0;
-  margin: 0;
-}
- 
-ul.menu li:hover ul.sub {
-  display: block; 
-}
- 
-ul.menu li ul.sub li:first-child{
-  border-top: 1px solid #1C2973; /*最初の要素のみボーダートップを指定*/
-}
-ul.menu li ul.sub li {
-  border: 1px solid #1C2973;  /*ボーダーの指定*/
-  border-top: none;  /*ボーダートップは重なって太くなるので解除*/
-}
-ul.menu {
- zoom:1; /*Clearfix IE6-7 対応*/
-}
-ul.menu:after { /*Clearfix*/
-  height:0;
-  visibility:hidden;
-  content:".";
-  display:block;
-  clear:both;
-} */
 
 /* 素材管理 */
 
@@ -129,3 +78,93 @@ ul.menu:after { /*Clearfix*/
   background-color:#343a40;
 }
 
+/* チェックメニュー */
+#panel {
+  background: #2d3d2d;
+  bottom: 0;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 280px;
+}
+
+#panel p {
+  color: #dfdfdf;
+  margin: 10px;
+  font-size:10pt;
+}
+
+/* 
+ * Core styles required for the checkboxes.
+ * @author Jason Mayes 2014, www.jasonmayes.com
+*/
+.wskLabel {
+  cursor: pointer;
+  font-size: 12pt;
+  display: block;
+  overflow: hidden;
+  padding-top: 20px;
+  position: relative;
+  min-height:40px;
+}
+
+.wskCheckbox {
+  border: 2px solid #5a5a5a;
+  color: #1d1d1d;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 14px;
+  margin: 0 20px 20px 20px;
+  outline-color: #eaeaea;
+  padding: 0;
+  position:relative;
+  width: 14px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index:1;
+}
+
+.wskCheckbox.checked {
+  border-left: 2px solid green;
+  border-bottom: 4px solid green;
+  border-top: 1px solid rgba(0,0,0,0);
+  border-right: 1px solid rgba(0,0,0,0);
+  -webkit-transform: rotate(-45deg) scaleY(0.5);
+  -moz-transform: rotate(-45deg) scaleY(0.5);
+  -ms-transform: rotate(-45deg) scaleY(0.5);
+  -o-transform: rotate(-45deg) scaleY(0.5);
+  transform: rotate(-45deg) scaleY(0.5);
+}
+
+input[type='checkbox'].wskCheckbox {
+   display: none;
+}
+
+.wskCircle {
+  background-color:#ccdffd;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  left: 9px;
+  opacity: 0;
+  position: absolute;
+  top: 9px;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 40px;
+  z-index:0;
+}
+
+.wskCircle.show {
+  opacity: 1;
+}
+
+.wskCircle.flipColor {
+  background-color: #d2d3d2;
+}

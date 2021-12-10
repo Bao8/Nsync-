@@ -108,7 +108,10 @@
 			<div class="tab-pane fade show active mt-1" id="episode1" role="tabpanel" aria-labelledby="episode1-tab">
 				<ul class="nav nav-tabs nav-fill" id="myTab2" role="tablist">
 					<li class="nav-item" role="presentation">
-						<a class="nav-link active" id="basic-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="basic" aria-selected="true">基本情報</a>
+						<a class="nav-link active" id="progress-tab" data-toggle="tab" href="#progress" role="tab" aria-controls="progress" aria-selected="true">作業進捗</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="basic-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="basic" aria-selected="false">基本情報</a>
 					</li>
 					<li class="nav-item" role="presentation">
 						<a class="nav-link" id="manage-tab" data-toggle="tab" href="#manage" role="tab" aria-controls="manage" aria-selected="false">納品管理</a>
@@ -127,7 +130,12 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="myTab2Content">
-					<div class="tab-pane fade show active mt-1" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+					<div class="tab-pane fade show active mt-1" id="progress" role="tabpanel" aria-labelledby="progress-tab">
+
+						@include('progress')
+
+					</div>
+					<div class="tab-pane fade mt-1" id="basic" role="tabpanel" aria-labelledby="basic-tab">
 
 						@include('info')
 						
@@ -162,7 +170,10 @@
 			<div class="tab-pane fade mt-1" id="episode2" role="tabpanel" aria-labelledby="episode2-tab">
 				<ul class="nav nav-tabs nav-fill" id="myTab3" role="tablist">
 					<li class="nav-item" role="presentation">
-						<a class="nav-link active" id="basic2-tab" data-toggle="tab" href="#basic2" role="tab" aria-controls="basic2" aria-selected="true">基本情報</a>
+						<a class="nav-link active" id="progress2-tab" data-toggle="tab" href="#progress2" role="tab" aria-controls="progress2" aria-selected="true">作業進捗</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="basic2-tab" data-toggle="tab" href="#basic2" role="tab" aria-controls="basic2" aria-selected="false">基本情報</a>
 					</li>
 					<li class="nav-item" role="presentation">
 						<a class="nav-link" id="manage2-tab" data-toggle="tab" href="#manage2" role="tab" aria-controls="manage2" aria-selected="false">納品管理</a>
@@ -181,9 +192,16 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="myTab3Content">
-					<div class="tab-pane fade show active mt-1" id="basic2" role="tabpanel" aria-labelledby="basic2-tab">
+					<div class="tab-pane fade show active mt-1" id="progress2" role="tabpanel" aria-labelledby="progress2-tab">
 					<?php
-					  echo "こんにちは";
+					  $hello = "おはよう";
+					  echo $hello;
+					?>
+					</div>
+					<div class="tab-pane fade mt-1" id="basic2" role="tabpanel" aria-labelledby="basic2-tab">
+					<?php
+					  $hello = "こんにちは";
+					  echo $hello;
 					?>
 					</div>
 					<div class="tab-pane fade mt-1" id="manage2" role="tabpanel" aria-labelledby="manage2-tab">
@@ -216,7 +234,10 @@
 			<div class="tab-pane fade mt-1" id="episode3" role="tabpanel" aria-labelledby="episode3-tab">
 				<ul class="nav nav-tabs nav-fill" id="myTab4" role="tablist">
 					<li class="nav-item" role="presentation">
-						<a class="nav-link active" id="basic3-tab" data-toggle="tab" href="#basic3" role="tab" aria-controls="basic3" aria-selected="true">基本情報</a>
+						<a class="nav-link active" id="progress3-tab" data-toggle="tab" href="#progress3" role="tab" aria-controls="progress3" aria-selected="true">作業進捗</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="basic3-tab" data-toggle="tab" href="#basic3" role="tab" aria-controls="basic3" aria-selected="false">基本情報</a>
 					</li>
 					<li class="nav-item" role="presentation">
 						<a class="nav-link" id="manage3-tab" data-toggle="tab" href="#manage3" role="tab" aria-controls="manage3" aria-selected="false">納品管理</a>
@@ -235,7 +256,12 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="myTab4Content">
-					<div class="tab-pane fade show active mt-1" id="basic3" role="tabpanel" aria-labelledby="basic3-tab">
+					<div class="tab-pane fade show active mt-1" id="progress3" role="tabpanel" aria-labelledby="progress3-tab">
+					<?php
+					  echo "Good mornning";
+					?>
+					</div>
+					<div class="tab-pane fade mt-1" id="basic3" role="tabpanel" aria-labelledby="basic3-tab">
 					<?php
 					  echo "Good mornning";
 					?>
@@ -270,7 +296,10 @@
 			<div class="tab-pane fade mt-1" id="sub" role="tabpanel" aria-labelledby="sub-tab">
 				<ul class="nav nav-tabs nav-fill" id="myTab5" role="tablist">
 					<li class="nav-item" role="presentation">
-						<a class="nav-link active" id="basic4-tab" data-toggle="tab" href="#basic4" role="tab" aria-controls="basic4" aria-selected="true">基本情報</a>
+						<a class="nav-link active" id="progress4-tab" data-toggle="tab" href="#progress4" role="tab" aria-controls="progress4" aria-selected="true">作業進捗</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="basic4-tab" data-toggle="tab" href="#basic4" role="tab" aria-controls="basic4" aria-selected="false">基本情報</a>
 					</li>
 					<li class="nav-item" role="presentation">
 						<a class="nav-link" id="manage4-tab" data-toggle="tab" href="#manage4" role="tab" aria-controls="manage4" aria-selected="false">納品管理</a>
@@ -289,7 +318,12 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="myTab5Content">
-					<div class="tab-pane fade show active mt-1" id="basic4" role="tabpanel" aria-labelledby="basic3-tab">
+					<div class="tab-pane fade show active mt-1" id="progress4" role="tabpanel" aria-labelledby="progress4-tab">
+					<?php
+					  echo "Hello World";
+					?>
+					</div>
+					<div class="tab-pane fade mt-1" id="basic4" role="tabpanel" aria-labelledby="basic4-tab">
 					<?php
 					  echo "Hello World";
 					?>
@@ -324,7 +358,10 @@
 			<div class="tab-pane fade mt-1" id="dub" role="tabpanel" aria-labelledby="dub-tab">
 				<ul class="nav nav-tabs nav-fill" id="myTab6" role="tablist">
 					<li class="nav-item" role="presentation">
-						<a class="nav-link active" id="basic5-tab" data-toggle="tab" href="#basic5" role="tab" aria-controls="basic5" aria-selected="true">基本情報</a>
+						<a class="nav-link active" id="progress5-tab" data-toggle="tab" href="#progress5" role="tab" aria-controls="progress5" aria-selected="true">作業進捗</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="basic5-tab" data-toggle="tab" href="#basic5" role="tab" aria-controls="basic5" aria-selected="false">基本情報</a>
 					</li>
 					<li class="nav-item" role="presentation">
 						<a class="nav-link" id="manage5-tab" data-toggle="tab" href="#manage5" role="tab" aria-controls="manage5" aria-selected="false">納品管理</a>
@@ -343,7 +380,12 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="myTab6Content">
-					<div class="tab-pane fade show active mt-1" id="basic5" role="tabpanel" aria-labelledby="basic5-tab">
+					<div class="tab-pane fade show active mt-1" id="progress5" role="tabpanel" aria-labelledby="progress5-tab">
+					<?php
+					  echo "Good luck";
+					?>
+					</div>
+					<div class="tab-pane fade mt-1" id="basic5" role="tabpanel" aria-labelledby="basic5-tab">
 					<?php
 					  echo "Good luck";
 					?>
@@ -378,7 +420,10 @@
 			<div class="tab-pane fade mt-1" id="trailer" role="tabpanel" aria-labelledby="trailer-tab">
 				<ul class="nav nav-tabs nav-fill" id="myTab7" role="tablist">
 					<li class="nav-item" role="presentation">
-						<a class="nav-link active" id="basic6-tab" data-toggle="tab" href="#basic6" role="tab" aria-controls="basic6" aria-selected="true">基本情報</a>
+						<a class="nav-link active" id="progress6-tab" data-toggle="tab" href="#progress6" role="tab" aria-controls="progress6" aria-selected="true">作業進捗</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="basic6-tab" data-toggle="tab" href="#basic6" role="tab" aria-controls="basic6" aria-selected="false">基本情報</a>
 					</li>
 					<li class="nav-item" role="presentation">
 						<a class="nav-link" id="manage6-tab" data-toggle="tab" href="#manage6" role="tab" aria-controls="manage6" aria-selected="false">納品管理</a>
@@ -397,7 +442,12 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="myTab7Content">
-					<div class="tab-pane fade show active mt-1" id="basic6" role="tabpanel" aria-labelledby="basic6-tab">
+					<div class="tab-pane fade show active mt-1" id="progress6" role="tabpanel" aria-labelledby="progress6-tab">
+					<?php
+					  echo "Have a nice day";
+					?>
+					</div>
+					<div class="tab-pane fade mt-1" id="basic6" role="tabpanel" aria-labelledby="basic6-tab">
 					<?php
 					  echo "Have a nice day";
 					?>
