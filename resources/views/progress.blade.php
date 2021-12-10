@@ -48,56 +48,56 @@
 		<input type="text" class="form-control" id="check1-mediainfo" aria-describedby="" value="" name="check1-mediainfo">
 	</div>
 	<div class="col-md-12">
-    	<label for="check1-_angleofview" class="form-label">スプレッドシート解像度</label>
-    	<input type="text" class="form-control" id="check-ss_angleofview" aria-describedby="" value="" name="check1-_angleofview">
+    	<label for="check1-sheet" class="form-label">スプレッドシート解像度</label>
+    	<input type="text" class="form-control" id="check1-sheet" aria-describedby="" value="" name="check1-sheet">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">ファイル名確認</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-file" class="form-label">ファイル名確認</label>
+    	<input type="text" class="form-control" id="check1-file" aria-describedby="" value="" name="check1-file">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">話数確認</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-episode" class="form-label">話数確認</label>
+    	<input type="text" class="form-control" id="check1-episde" aria-describedby="" value="" name="check1-episde">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">映像ノイズ</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-movienoize" class="form-label">映像ノイズ</label>
+    	<input type="text" class="form-control" id="check1-movienoize" aria-describedby="" value="" name="check1-movienoize">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">編集箇所</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-editpoint" class="form-label">編集箇所</label>
+    	<input type="text" class="form-control" id="check1-editpoint" aria-describedby="" value="" name="check1-editpoint">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">\解像度</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-angleofview" class="form-label">解像度</label>
+    	<input type="text" class="form-control" id="check1-angleofview" aria-describedby="" value="" name="check1-angleofview">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">フレームレート</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-flamerate" class="form-label">フレームレート</label>
+    	<input type="text" class="form-control" id="check-flamerate" aria-describedby="" value="" name="check-flamerate">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">字幕ズレ</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-submiss" class="form-label">字幕ズレ</label>
+    	<input type="text" class="form-control" id="check1-submiss" aria-describedby="" value="" name="check1-submiss">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">フィールド</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-field" class="form-label">フィールド</label>
+    	<input type="text" class="form-control" id="check1-field" aria-describedby="" value="" name="check1-field">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">音声ノイズ</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-audionoize" class="form-label">音声ノイズ</label>
+    	<input type="text" class="form-control" id="check1-audionoize" aria-describedby="" value="" name="check1-audionoize">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">音声ズレ</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-audiomiss" class="form-label">音声ズレ</label>
+    	<input type="text" class="form-control" id="check1-audiomiss" aria-describedby="" value="" name="check1-audiomiss">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">音声アサイン</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-audioasign" class="form-label">音声アサイン</label>
+    	<input type="text" class="form-control" id="check1-audioasign" aria-describedby="" value="" name="check1-audioasign">
  	</div>
 	<div class="col-md-12">
-    	<label for="check1-angleofview" class="form-label">言語</label>
-    	<input type="text" class="form-control" id="check-angleofview" aria-describedby="" value="" name="check-angleofview">
+    	<label for="check1-language" class="form-label">言語</label>
+    	<input type="text" class="form-control" id="check1-language" aria-describedby="" value="" name="check1-language">
  	</div>
 	 <div class="col-md-12">
 		<label for="check1-editer" class="form-label">担当者</label>
@@ -119,12 +119,12 @@
 		<input type="text" class="form-control" id="check2-mediainfo" aria-describedby="" value="" name="check2-mediainfo">
 	</div>
 	<div class="col-md-12">
-    	<label for="check2-angleofview" class="form-label">ファイル名確認</label>
-    	<input type="text" class="form-control" id="check2-angleofview" aria-describedby="" value="" name="check2-angleofview">
+    	<label for="check2-file" class="form-label">ファイル名確認</label>
+    	<input type="text" class="form-control" id="check2-file" aria-describedby="" value="" name="check2-file">
  	</div>
 	<div class="col-md-12">
-    	<label for="check2-angleofview" class="form-label">話数確認</label>
-    	<input type="text" class="form-control" id="check2-angleofview" aria-describedby="" value="" name="check2-angleofview">
+    	<label for="check2-episode" class="form-label">話数確認</label>
+    	<input type="text" class="form-control" id="check2-episode" aria-describedby="" value="" name="check2-episode">
  	</div>
 	<div class="col-md-12">
 		<label for="check2-editer" class="form-label">担当者</label>
