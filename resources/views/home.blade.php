@@ -50,7 +50,7 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td><a href="dashboad_sozai" class="text-decoration-none text-reset">銀の匙　Silver Spoon</a></td>
+      <td><a href="contents" class="text-decoration-none text-reset">銀の匙　Silver Spoon</a></td>
       <td>2021/11/12</td>
       <td>邦画</td>
 	  <td>本/予</td>
@@ -59,7 +59,7 @@
     </tr>
 	 <tr>
       <th scope="row">2</th>
-      <td><a href="dashboad_sozai" class="text-decoration-none text-reset">眠れる森の美女</a></td>
+      <td><a href="contents" class="text-decoration-none text-reset">眠れる森の美女</a></td>
       <td>2021/11/12</td>
       <td>洋画</td>
 	  <td>字/吹/予</td>
@@ -68,7 +68,7 @@
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td><a href="dashboad_sozai" class="text-decoration-none text-reset">東京男子図鑑</a></td>
+      <td><a href="contents" class="text-decoration-none text-reset">東京男子図鑑</a></td>
       <td>2021/11/12</td>
       <td>国内ドラマ</td>
 	  <td>1シーズン</td>
@@ -77,7 +77,7 @@
     </tr>
 	  <tr>
       <th scope="row">4</th>
-      <td><a href="dashboad_sozai" class="text-decoration-none text-reset">ふしぎ駄菓子屋 銭天堂</a></td>
+      <td><a href="contents" class="text-decoration-none text-reset">ふしぎ駄菓子屋 銭天堂</a></td>
       <td>2021/11/12</td>
       <td>アニメ(見逃し)</td>
 	  <td>1シーズン</td>
@@ -87,7 +87,7 @@
 	</tr>
 	  <tr>
       <th scope="row">5</th>
-      <td><a href="dashboad_sozai" class="text-decoration-none text-reset">パ二パ二パイナ！</a></td>
+      <td><a href="contents" class="text-decoration-none text-reset">パ二パ二パイナ！</a></td>
       <td>2021/11/12</td>
       <td>バラエティ</td>
 	  <td>5シーズン</td>
