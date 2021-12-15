@@ -150,7 +150,7 @@
 	</div>
 	<h4 class="pt-4">納品</h4>
 	<div class="col-md-12">
-    	<label for="check3-comdate" class="form-label">リストア完了希望日</label>
+    	<label for="check3-comdate" class="form-label">納品完了日</label>
     	<input type="date" class="form-control" id="check3-comdate" aria-describedby="" value="20211201" name="check3-comdate">
  	</div>
 	<div class="col-md-12">

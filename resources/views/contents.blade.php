@@ -21,8 +21,8 @@
 							<input type="text" class="form-control" id="rightsource"  name="rightsource">
 						</div>
 						<div class="col-6 mt-2">
-							<label for="contentscode" class="form-label m-0 font-weight-bold">コンテンツコード</label>
-							<input type="text" class="form-control" id="contentscode" name="contentscode">
+							<label for="seriescontentscode" class="form-label m-0 font-weight-bold">シリーズコンテンツコード</label>
+							<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode">
 						</div>
 						<div class="col-6 mt-2">
 							<label for="category" class="form-label m-0 font-weight-bold">カテゴリ</label>

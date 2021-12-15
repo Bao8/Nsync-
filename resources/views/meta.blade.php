@@ -19,8 +19,8 @@
 		<input type="text" class="form-control" id="copyright" aria-describedby="" value="" name="copyright">
 	</div>
 	<div class="col-md-12">
-		<label for="langauge" class="form-label">使用言語</label>
-		<select id="langauge" class="form-select" name="langauge">
+		<label for="language" class="form-label">使用言語</label>
+		<select id="language" class="form-select" name="language">
 			<option selected>選択</option>
 			<option value="ja">日本</option>
 			<option value="en">アメリカ</option>

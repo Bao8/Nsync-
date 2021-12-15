@@ -12,7 +12,18 @@
 	</div>
 	<div class="col-md-3">
 		<label for="contentstype" class="form-label">コンテンツタイプ</label>
-		<input type="text" class="form-control" id="title" aria-describedby="" value="オリジナル" name="contentstype">
+		<select id="contentstype" class="form-select" name="contentstype">
+			<option value="ORG" selected>本編</option>
+			<option value="TR">予告編</option>
+			<option value="Pre">プレビュー</option>
+			<option value="JPNSub">字幕本編</option>
+			<option value="TRSub">字幕予告編</option>
+			<option value="PreSub">字幕プレビュー</option>
+			<option value="JPNDub">吹替本編</option>
+			<option value="TRDub">吹替予告編</option>
+			<option value="PreDub">吹替プレビュー</option>
+			<option value="Textless">白完パケ</option>
+		</select>
 	</div>
 	<div class="col-md-3">
 		<label for="matter" class="form-label">案件</label>

@@ -57,9 +57,12 @@
 	<div class="col-md-4">
 		<label for="deliveryformat" class="form-label">納品形式</label>
 		<select id="deliveryformat" class="form-select" name="deliveryformat">
-			<option value="mov" selected>mov</option>
-			<option value="mpeg">mpeg</option>
-			<option value="avi">avi</option>
+			<option selected>拡張子を選択</option>
+			<option value="mov">MOV</option>
+			<option value="mp4">MP4</option>
+			<option value="avi">AVI</option>
+			<option value="mxf">MXF</option>
+			<option value="mpeg">MPEG</option>
 		</select>
 	</div>
 	<div class="col-12">
