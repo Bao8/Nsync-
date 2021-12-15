@@ -55,14 +55,18 @@
 		<label for="moviebitrate" class="form-label">映像ビットレート</label>
 			<div class="input-group">
 				<input type="number" class="form-control" aria-describedby="moviebitrate" value="10000" name="moviebitrate">
-				<span class="input-group-text" id="moviebitrate">kbps</span>
+				<div class="input-group-append">
+					<span class="input-group-text" id="moviebitrate">kbps</span>
+				</div>
 			</div>
 	</div>
 	<div class="col-md-6">
 		<label for="audiobitrate" class="form-label">音声ビットレート</label>
 			<div class="input-group">
 				<input type="number" class="form-control" aria-describedby="audiobitrate" value="128" name="audiobitrate">
-				<span class="input-group-text" id="audiobitrate">kbps</span>
+				<div class="input-group-append">
+					<span class="input-group-text" id="audiobitrate">kbps</span>
+				</div>	
 			</div>
 	</div>
 	<div class="col-md-6">

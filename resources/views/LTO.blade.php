@@ -61,21 +61,27 @@
 		<label for="bitrate" class="form-label">総ビットレート</label>
 			<div class="input-group">
 				<input type="number" class="form-control" aria-describedby="moviebitrate" value="10000" name="bitrate">
-				<span class="input-group-text" id="moviebitrate">kbps</span>
+				<div class="input-group-append">
+					<span class="input-group-text" id="moviebitrate">kbps</span>
+				</div>	
 			</div>
 	</div>
 	 <div class="col-md-3">
 		<label for="moviebitrate" class="form-label">映像ビットレート</label>
 			<div class="input-group">
 				<input type="number" class="form-control" aria-describedby="moviebitrate" value="10000" name="moviebitrate">
-				<span class="input-group-text" id="moviebitrate">kbps</span>
+				<div class="input-group-append">
+					<span class="input-group-text" id="moviebitrate">kbps</span>
+				</div>
 			</div>
 	</div>
 	<div class="col-md-3">
 		<label for="audiobitrate" class="form-label">音声ビットレート</label>
 			<div class="input-group">
 				<input type="number" class="form-control" aria-describedby="audiobitrate" value="128" name="audiobitrate">
-				<span class="input-group-text" id="audiobitrate">kbps</span>
+				<div class="input-group-append">
+					<span class="input-group-text" id="audiobitrate">kbps</span>
+				</div>
 			</div>
 	</div>
 	 <div class="col-md-6">
@@ -112,7 +118,9 @@
 		<label for="datasize" class="form-label">データサイズ</label>		
 			<div class="input-group">
 				<input type="number" class="form-control" aria-describedby="" value="5000000" name="datasize">
-				<span class="input-group-text" id="datasize">MB</span>
+				<div class="input-group-append">
+					<span class="input-group-text" id="datasize">MB</span>
+				</div>
 			</div>
 	</div>
 	<div class="col-md-3">
