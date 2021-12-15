@@ -33,6 +33,7 @@
 			<option value="son">孫</option>
 			<option value="suzuki">鈴木</option>
 			<option value="ishii">石井</option>
+			<option value="rin">リン</option>
 		</select>
 	</div>
 	<h4 class="pt-4">チェック1</h4>
@@ -144,6 +145,7 @@
 			<option value="son">孫</option>
 			<option value="suzuki">鈴木</option>
 			<option value="ishii">石井</option>
+			<option value="rin">リン</option>
 		</select>
 	</div>
 	<h4 class="pt-4">納品</h4>
@@ -163,6 +165,7 @@
 			<option value="son">孫</option>
 			<option value="suzuki">鈴木</option>
 			<option value="ishii">石井</option>
+			<option value="rin">リン</option>
 		</select>
 	</div>
 </form>

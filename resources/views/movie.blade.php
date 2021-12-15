@@ -104,10 +104,10 @@
 	</div>
 	<div class="col-12">
 		<label for="postproduction" class="form-label">作業ポストプロダクション</label>
-		<input type="text" class="form-control" id="postproduction" aria-describedby="" value="" name="postroduction">
+		<input type="text" class="form-control" id="postproduction" aria-describedby="" value="" name="postproduction">
 	</div>
 	<div class="col-12">
 		<label for="moviespecialnote" class="form-label">特記事項</label>
-  		<textarea class="form-control" id="moviespecialnote" rows="3" name="movispecialnote"></textarea>
+  		<textarea class="form-control" id="moviespecialnote" rows="3" name="moviespecialnote"></textarea>
  	</div>
 </form>

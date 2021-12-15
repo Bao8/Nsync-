@@ -28,8 +28,8 @@
 		<input type="text" class="form-control" id="storagelocation" aria-describedby="" value="" name="storagelocation">
 	</div>
 	<div class="col-12">
-		<label for="storagelocation" class="form-label">返却先住所</label>
-		<input type="text" class="form-control" id="storagelocation" aria-describedby="" value="" name="storagelocation">
+		<label for="returnaddress" class="form-label">返却先住所</label>
+		<input type="text" class="form-control" id="returnaddress" aria-describedby="" value="" name="returnaddress">
 	</div>
 	<div class="col-md-6">
 		<label for="tracking" class="form-label">伝票番号</label>
@@ -51,34 +51,35 @@
     	<input type="text" class="form-control" id="deliverydestination" aria-describedby="" value="" name="deliverydestination">
  	</div>
 	 <div class="col-12">
-    	<label for="deliverydestination" class="form-label">納品方法</label>
-    	<input type="text" class="form-control" id="deliverydestination" aria-describedby="" value="" name="deliverydestination">
+    	<label for="deliverymethod" class="form-label">納品方法</label>
+    	<input type="text" class="form-control" id="deliverymethod" aria-describedby="" value="" name="deliverymethod">
  	</div>
 	<div class="col-md-4">
-		<label for="matter" class="form-label">納品形式</label>
-		<select id="matter" class="form-select" name="matter">
+		<label for="deliveryformat" class="form-label">納品形式</label>
+		<select id="deliveryformat" class="form-select" name="deliveryformat">
 			<option value="mov" selected>mov</option>
 			<option value="mpeg">mpeg</option>
+			<option value="avi">avi</option>
 		</select>
 	</div>
 	<div class="col-12">
-		<label for="matter" class="form-label">納品項目</label>
+		<label for="deliveryitems" class="form-label">納品項目</label>
 		<div class="w-100"></div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="deliveryitem1" name="deliveryitem1">
-			<label class="form-check-label" for="deliveryitem1">動画</label>
+			<input class="form-check-input" type="checkbox" id="deliveryitem-1" name="deliveryitems" value="movie">
+			<label class="form-check-label" for="deliveryitem-1">動画</label>
 		</div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="deliveryitem2" name="deliveryitem2">
-			<label class="form-check-label" for="deliveryitem2">サムネイル</label>
+			<input class="form-check-input" type="checkbox" id="deliveryitem-2" name="deliveryitems" value="thumb">
+			<label class="form-check-label" for="deliveryitem-2">サムネイル</label>
 		</div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="deliveryitem3" name="deliveryitem3">
-			<label class="form-check-label" for="deliveryitem3">メタ</label>
+			<input class="form-check-input" type="checkbox" id="deliveryitem-3" name="deliveryitems" value="meta">
+			<label class="form-check-label" for="deliveryitem-3">メタ</label>
 		</div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="deliveryitem4" name="deliveryitem4">
-			<label class="form-check-label" for="deliveryitem4">AW</label>
+			<input class="form-check-input" type="checkbox" id="deliveryitem-4" name="deliveryitems" value="aw">
+			<label class="form-check-label" for="deliveryitem-4">AW</label>
 		</div>
 	</div>
 	<div class="col-12">

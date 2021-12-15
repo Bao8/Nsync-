@@ -52,6 +52,7 @@
 			<option value="kaigaidorama">海外ドラマ</option>
 			<option value="anime">アニメ</option>
 			<option value="kaigaianime">海外アニメ</option>
+			<option value="variety">バラエティ</option>
 		</select>
 	</div>
 	<div class="col-md-6">

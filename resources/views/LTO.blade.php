@@ -29,12 +29,8 @@
 		<label for="moviefilename" class="form-label">ファイル名</label>
 		<input type="text" class="form-control" id="moviefilename" aria-describedby="" value="" name="moviefilename">
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-6">
     	<label for="movieformat" class="form-label">ファイル形式</label>
-    	<input type="text" class="form-control" id="movieformat" aria-describedby="" value="" name="movieformat">
- 	</div>
-	<div class="col-md-3">
-    	<label for="movieformat" class="form-label">拡張子</label>
     	<select id="movieformat" class="form-select" name="movieformat">
 			<option selected>拡張子を選択</option>
 			<option value="mov">MOV</option>
@@ -106,7 +102,7 @@
 		</select>
 	</div>
 	<div class="col-md-6">
-		<label for="resolution" class="form-label">画角</label>
+		<label for="resolution" class="form-label">比率</label>
 		<select id="resolution" class="form-select" name="resolution">
 			<option value="16_9" selected>16:9</option>
 			<option value="4_3">4:3</option>

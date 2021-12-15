@@ -25,17 +25,6 @@
 							<input type="text" class="form-control" id="contentscode" name="contentscode">
 						</div>
 						<div class="col-6 mt-2">
-							<label for="genre" class="form-label m-0 font-weight-bold">ジャンル</label>
-							<select id="genre" class="form-select" name="genre">
-								<option selected>選択</option>
-								<option value="horror">ホラー</option>
-								<option value="comedy">コメディー</option>
-								<option value="romance">ロマンス</option>
-								<option value="action">アクション</option>
-								<option value="fantasy">ファンタジー</option>
-							</select>
-						</div>
-						<div class="col-6 mt-2">
 							<label for="category" class="form-label m-0 font-weight-bold">カテゴリ</label>
 							<select id="category" class="form-select" name="category">
 								<option selected>選択</option>
@@ -48,9 +37,20 @@
 								<option value="variety">バラエティ</option>
 							</select>
 						</div>
+						<div class="col-6 mt-2">
+							<label for="genre" class="form-label m-0 font-weight-bold">ジャンル</label>
+							<select id="genre" class="form-select" name="genre">
+								<option selected>選択</option>
+								<option value="horror">ホラー</option>
+								<option value="comedy">コメディー</option>
+								<option value="romance">ロマンス</option>
+								<option value="action">アクション</option>
+								<option value="fantasy">ファンタジー</option>
+							</select>
+						</div>
 						<div class="col mt-2 ">
-							<label for="seriesinfo" class="form-label mb-0 font-weight-bold">備考</label>
-							<textarea class="form-control" id="seriesinfo" rows="2" name="seriesinfo"></textarea>
+							<label for="info" class="form-label mb-0 font-weight-bold">備考</label>
+							<textarea class="form-control" id="info" rows="2" name="info"></textarea>
 						</div>
 					</div>
 				</div>
