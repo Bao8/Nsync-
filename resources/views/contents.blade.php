@@ -1,14 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<ul class="nav nav-tabs nav-fill nav-pills bg-success" id="myTab" role="tablist">
-	<li class="nav-item" role="presentation">
-		<a class="nav-link active" id="series-tab" data-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="true">Series<span class="badge bg-danger m-1">6</span></a>
-	</li>
-</ul>
-<div class="tab-content" id="myTabContent">
-	<div class="tab-pane fade show active mt-1" id="series" role="tabpanel" aria-labelledby="series-tab">
-		<div class="container titleinfo mb-2 pt-1">
+	<div class="container titleinfo mb-2 pt-1">
 					<div class="mt-2">
 						<h2 class="title">相棒</h2>
 					</div>
@@ -81,8 +74,6 @@
 				</div>
 				-->
 			</div>
-		</div>
-	</div>	
 		<ul class="nav nav-tabs tab-menu nav-pills" id="myTab" role="tablist">
 			<li class="nav-item" role="presentation">
 				<a class="nav-link active" id="episode1-tab" data-toggle="tab" href="#episode1" role="tab" aria-controls="episode1" aria-selected="true">Eps1</a>
@@ -481,6 +472,4 @@
 			</div>
 		</div>
 	</div>
-</div>
-
 @endsection

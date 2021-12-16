@@ -1,10 +1,10 @@
 <form class="row g-3" action="/contents" enctype="multipart/form-data" method="post">
     @csrf
-	<div class="col-md-1">
+	<div class="col-md-2">
 		<button type="submit" class="btn btn-primary">更新</button>
 	</div>
 	<div class="col-md-1" style="padding-left:0;">
-		<input type="reset" class="btn btn-warning" value="取消">
+		<button type="reset" class="btn btn-warning">取消</button>
 	</div>	
 	<div class="w-100"></div>
 	<h1 class="col-12">素材管理</h1>
