@@ -10,7 +10,7 @@
 	<div class="tab-pane fade show active mt-1" id="series" role="tabpanel" aria-labelledby="series-tab">
 		<div class="container titleinfo mb-2 pt-1">
 					<div class="mt-2">
-						<h2 class="title">銀の匙　Silver Spoon</h2>
+						<h2 class="title">相棒</h2>
 					</div>
 			<div class="row infomation">
 				<div class="col-12 flex-coloum">
@@ -18,11 +18,11 @@
 					<div class="row">
 						<div class="col-6 mt-2">
 							<label for="rightsource" class="form-label m-0 font-weight-bold">権利元</label>
-							<input type="text" class="form-control" id="rightsource"  name="rightsource">
+							<input type="text" class="form-control" id="rightsource"  name="rightsource" value="テレビ朝日">
 						</div>
 						<div class="col-6 mt-2">
 							<label for="seriescontentscode" class="form-label m-0 font-weight-bold">シリーズコンテンツコード</label>
-							<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode">
+							<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode" value="JPA10000063894">
 						</div>
 						<div class="col-6 mt-2">
 							<label for="category" class="form-label m-0 font-weight-bold">カテゴリ</label>
@@ -49,8 +49,8 @@
 							</select>
 						</div>
 						<div class="col mt-2 ">
-							<label for="info" class="form-label mb-0 font-weight-bold">備考</label>
-							<textarea class="form-control" id="info" rows="2" name="info"></textarea>
+							<label for="season-info" class="form-label mb-0 font-weight-bold">備考</label>
+							<textarea class="form-control" id="season-info" rows="2" name="season-info"></textarea>
 						</div>
 					</div>
 				</div>

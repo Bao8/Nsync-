@@ -36,13 +36,14 @@
  	</div>
    <div class="col-md-12">
     <label for="genre" class="form-label">ジャンル</label>
-    <select id="genre" class="form-select" name="genre">			
-      <option value="horror" selected>ホラー</option>
-      <option value="comedy">コメディー</option>
-      <option value="romance">ロマンス</option>
-      <option value="action">アクション</option>
-      <option value="fantasy">ファンタジー</option>
-    </select>
+    	<select id="genre" class="form-select" name="genre">			
+			<option selected>ジャンルを選択</option>
+			<option value="horror">ホラー</option>
+			<option value="comedy">コメディー</option>
+			<option value="romance">ロマンス</option>
+			<option value="action">アクション</option>
+			<option value="fantasy">ファンタジー</option>
+		</select>
   </div>
 	<div class="col-md-12">
     	<label for="raiting" class="form-label">レイティング</label>
@@ -98,7 +99,7 @@
     <input type="text" class="form-control" id="staff" aria-describedby="" value="" name="staff">
   </div>
 	<div class="col-12">
-		<label for="seriesinfo" class="form-label">シリーズ情報</label>
-		<textarea class="form-control" id="seriesinfo" rows="3" name="seriesinfo"></textarea>
+		<label for="episode-info" class="form-label">エピソード情報</label>
+		<textarea class="form-control" id="episode-info" rows="3" name="episode-info"></textarea>
 	</div>
 </form>

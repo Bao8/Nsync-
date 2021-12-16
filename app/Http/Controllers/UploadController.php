@@ -10,4 +10,5 @@ class UploadController extends Controller
         $filename=request()->file('image')->getClientOriginalName();
         $inputs['image']=request('image')->storeAs('public/thumb', $filename);
    }
+
 }

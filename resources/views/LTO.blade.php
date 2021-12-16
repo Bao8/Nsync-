@@ -26,8 +26,8 @@
 		</select>
 	</div>
 	<div class="col-md-3">
-		<label for="matter" class="form-label">案件</label>
-		<select id="matter" class="form-select" name="matter">
+		<label for="service" class="form-label">案件</label>
+		<select id="service" class="form-select" name="service">
 			<option selected>案件を選択</option>
 			<option value="amazon">amazon</option>
 			<option value="atv">ATV</option>
@@ -37,12 +37,12 @@
 		</select>
 	</div>
 	<div class="col-md-6">
-		<label for="moviefilename" class="form-label">ファイル名</label>
-		<input type="text" class="form-control" id="moviefilename" aria-describedby="" value="" name="moviefilename">
+		<label for="movie-filename" class="form-label">ファイル名</label>
+		<input type="text" class="form-control" id="movie-filename" aria-describedby="" value="" name="movie-filename">
 	</div>
 	<div class="col-md-6">
-    	<label for="movieformat" class="form-label">ファイル形式</label>
-    	<select id="movieformat" class="form-select" name="movieformat">
+    	<label for="movie-format" class="form-label">ファイル形式</label>
+    	<select id="movie-format" class="form-select" name="movie-format">
 			<option selected>拡張子を選択</option>
 			<option value="mov">MOV</option>
 			<option value="mp4">MP4</option>
@@ -52,42 +52,42 @@
 		</select>
  	</div>
 	 <div class="col-md-6">
-		<label for="path" class="form-label">パス</label>
-		<input type="text" class="form-control" id="path" aria-describedby="" value="" name="path">
+		<label for="lto-path" class="form-label">パス</label>
+		<input type="text" class="form-control" id="lto-path" aria-describedby="" value="" name="lto-path">
 	</div>
 	<div class="col-md-3">
-		<label for="tapenumber" class="form-label">テープ番号</label>
-		<input type="number" class="form-control" id="tapenumber" aria-describedby="" value="1" name="tapenumber">
+		<label for="lto-tapenumber" class="form-label">テープ番号</label>
+		<input type="number" class="form-control" id="lto-tapenumber" aria-describedby="" value="1" name="lto-tapenumber">
 	</div>
 	<div class="col-md-3">
-		<label for="storage" class="form-label">保管場所</label>
-		<input type="text" class="form-control" id="storage" aria-describedby="" value="" name="storage">
+		<label for="lto-storage" class="form-label">保管場所</label>
+		<input type="text" class="form-control" id="lto-storage" aria-describedby="" value="" name="lto-storage">
 	</div>
 	<div class="w-100"></div>
 	 <div class="col-md-6">
-		<label for="bitrate" class="form-label">総ビットレート</label>
+		<label for="totalbitrate" class="form-label">総ビットレート</label>
 			<div class="input-group">
-				<input type="number" class="form-control" aria-describedby="moviebitrate" value="10000" name="bitrate">
+				<input type="number" class="form-control" aria-describedby="totalbitrate" value="10000" name="totalbitrate">
 				<div class="input-group-append">
-					<span class="input-group-text" id="moviebitrate">kbps</span>
+					<span class="input-group-text" id="totalbitrate">kbps</span>
 				</div>	
 			</div>
 	</div>
 	 <div class="col-md-3">
-		<label for="moviebitrate" class="form-label">映像ビットレート</label>
+		<label for="movie-bitrate" class="form-label">映像ビットレート</label>
 			<div class="input-group">
-				<input type="number" class="form-control" aria-describedby="moviebitrate" value="10000" name="moviebitrate">
+				<input type="number" class="form-control" aria-describedby="movie-bitrate" value="10000" name="movie-bitrate">
 				<div class="input-group-append">
-					<span class="input-group-text" id="moviebitrate">kbps</span>
+					<span class="input-group-text" id="movie-bitrate">kbps</span>
 				</div>
 			</div>
 	</div>
 	<div class="col-md-3">
-		<label for="audiobitrate" class="form-label">音声ビットレート</label>
+		<label for="movie-audiobitrate" class="form-label">音声ビットレート</label>
 			<div class="input-group">
-				<input type="number" class="form-control" aria-describedby="audiobitrate" value="128" name="audiobitrate">
+				<input type="number" class="form-control" aria-describedby="movie-audiobitrate" value="128" name="movie-audiobitrate">
 				<div class="input-group-append">
-					<span class="input-group-text" id="audiobitrate">kbps</span>
+					<span class="input-group-text" id="movie-audiobitrate">kbps</span>
 				</div>
 			</div>
 	</div>
@@ -122,11 +122,11 @@
 		</select>
 	</div>
 	<div class="col-md-3">
-		<label for="datasize" class="form-label">データサイズ</label>		
+		<label for="movie-datasize" class="form-label">データサイズ</label>		
 			<div class="input-group">
-				<input type="number" class="form-control" aria-describedby="" value="5000000" name="datasize">
+				<input type="number" class="form-control" aria-describedby="" value="5000000" name="movie-datasize">
 				<div class="input-group-append">
-					<span class="input-group-text" id="datasize">MB</span>
+					<span class="input-group-text" id="movie-datasize">MB</span>
 				</div>
 			</div>
 	</div>
@@ -162,12 +162,12 @@
     	<input type="date" class="form-control" id="restorecomdate" aria-describedby="" value="20211201" name="restorecomdate">
  	</div>
 	 <div class="col-md-3">
-    	<label for="update" class="form-label">更新日時</label>
-    	<input type="date" class="form-control" id="update" aria-describedby="" value="20211201" name="update">
+    	<label for="movie-update" class="form-label">更新日時</label>
+    	<input type="date" class="form-control" id="movie-update" aria-describedby="" value="20211201" name="movie-update">
  	</div>
 	 <div class="col-md-3">
-    	<label for="createdate" class="form-label">作成日時</label>
-    	<input type="date" class="form-control" id="createdate" aria-describedby="" value="20211201" name="createdate">
+    	<label for="movie-create" class="form-label">作成日時</label>
+    	<input type="date" class="form-control" id="movie-create" aria-describedby="" value="20211201" name="movie-create">
  	</div>
 	<!-- <div class="col-12">
 		<label for="episodetitle" class="form-label">エピソードタイトル</label>

@@ -7,20 +7,27 @@
 	</div>	
 	<div class="w-100"></div>
 	<div class="col-md-6">
-    	<label for="movieformat" class="form-label">フォーマット</label>
-    	<input type="text" class="form-control" id="movieformat" aria-describedby="" value="mov" name="movieformat">
+    	<label for="movie-format" class="form-label">フォーマット</label>
+    	<select id="movie-format" class="form-select" name="movie-format">
+			<option selected>拡張子を選択</option>
+			<option value="mov">MOV</option>
+			<option value="mp4">MP4</option>
+			<option value="avi">AVI</option>
+			<option value="mxf">MXF</option>
+			<option value="mpeg">MPEG</option>
+		</select>
  	</div>
 	 <div class="w-100"></div>
 	 <div class="col-md-6">
-		<label for="angleofview" class="form-label">画角</label>
-		<select id="angleofview" class="form-select" name="angleofview">
+		<label for="movie-angleofview" class="form-label">画角</label>
+		<select id="movie-angleofview" class="form-select" name="movie-angleofview">
 			<option value="1920_1080" selected>1920x1080</option>
 			<option value="720_480">720x480</option>
 		</select>
 	</div>
 	<div class="col-md-6">
-		<label for="resolution" class="form-label">比率</label>
-		<select id="resolution" class="form-select" name="resolution">
+		<label for="movie-resolution" class="form-label">比率</label>
+		<select id="movie-resolution" class="form-select" name="movie-resolution">
 			<option value="16_9" selected>16:9</option>
 			<option value="4_3">4:3</option>
 			<option value="4_3_lb">4:3 LB</option>
@@ -28,9 +35,9 @@
 		</select>
 	</div>
 	<div class="col-md-6">
-		<label for="nativefps" class="form-label">FPS</label>
+		<label for="movie-nativefps" class="form-label">FPS</label>
 		<div class="form-floating mb-3">
-			<select id="nativefps" class="form-select" name="nativefps">
+			<select id="movie-nativefps" class="form-select" name="movie-nativefps">
 				<option value="60">60</option>
 				<option value="59.97">59.97</option>
 				<option value="30">30</option>
@@ -41,8 +48,8 @@
 		</div>
 	</div>
 	<div class="col-md-6">
-		<label for="encodefps" class="form-label">FPS＜エンコード＞</label>
-		<select id="encodefps" class="form-select" name="encodefps">
+		<label for="movie-encodefps" class="form-label">FPS＜エンコード＞</label>
+		<select id="movie-encodefps" class="form-select" name="movie-encodefps">
 				<option value="60">60</option>
 				<option value="59.97">59.97</option>
 				<option value="30">30</option>
@@ -52,26 +59,26 @@
 		</select>
 	</div>
 	<div class="col-md-6">
-		<label for="moviebitrate" class="form-label">映像ビットレート</label>
+		<label for="movie-bitrate" class="form-label">映像ビットレート</label>
 			<div class="input-group">
-				<input type="number" class="form-control" aria-describedby="moviebitrate" value="10000" name="moviebitrate">
+				<input type="number" class="form-control" aria-describedby="movie-bitrate" value="10000" name="movie-bitrate">
 				<div class="input-group-append">
-					<span class="input-group-text" id="moviebitrate">kbps</span>
+					<span class="input-group-text" id="movie-bitrate">kbps</span>
 				</div>
 			</div>
 	</div>
 	<div class="col-md-6">
-		<label for="audiobitrate" class="form-label">音声ビットレート</label>
+		<label for="movie-audiobitrate" class="form-label">音声ビットレート</label>
 			<div class="input-group">
-				<input type="number" class="form-control" aria-describedby="audiobitrate" value="128" name="audiobitrate">
+				<input type="number" class="form-control" aria-describedby="movie-audiobitrate" value="128" name="movie-audiobitrate">
 				<div class="input-group-append">
 					<span class="input-group-text" id="audiobitrate">kbps</span>
 				</div>	
 			</div>
 	</div>
 	<div class="col-md-6">
-		<label for="audiochannel" class="form-label">音声チャンネル</label>
-		<select id="audiochannel" class="form-select" name="audiochannel">
+		<label for="movie-audiochannel" class="form-label">音声チャンネル</label>
+		<select id="movie-audiochannel" class="form-select" name="movie-audiochannel">
 			<option value="7.1">7.1ch</option>
 			<option value="5.1">5.1ch</option>
 			<option value="2" selected>2ch</option>
@@ -80,13 +87,13 @@
 	</div>
 	<div class="w-100"></div>
 	<div class="col-md-6">
-		<label for="length" class="form-label">長さ</label>		
-		<input type="text" class="form-control" id="length" aria-describedby="" value="0:03:29" name="length">		
+		<label for="movie-length" class="form-label">長さ</label>		
+		<input type="text" class="form-control" id="movie-length" aria-describedby="" value="0:60:00" name="movie-length">		
 	</div>
 	<div class="w-100"></div>
 	<div class="col-12">
-		<label for="moviefilename" class="form-label">ファイル名</label>
-		<input type="text" class="form-control" id="moviefilename" aria-describedby="" value="" name="moviefilename">
+		<label for="movie-filename" class="form-label">ファイル名</label>
+		<input type="text" class="form-control" id="movie-filename" aria-describedby="" value="" name="movie-filename">
 	</div>
 	<div class="col-md-6">
 		<label for="contentstype" class="form-label">コンテンツタイプ</label>
