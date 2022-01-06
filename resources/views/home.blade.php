@@ -52,10 +52,10 @@
       <th scope="row">1</th>
       <td><a href="contents" class="text-decoration-none text-reset">相棒</a></td>
       <td>2021/11/12</td>
-      <td>邦画</td>
-	  <td>本/予</td>
+      <td>国内ドラマ</td>
+	  <td>本編</td>
       <td>-</td>
-	  <td>マイシアター</td>
+	  <td>テレビ朝日</td>
     </tr>
 	 <tr>
       <th scope="row">2</th>
