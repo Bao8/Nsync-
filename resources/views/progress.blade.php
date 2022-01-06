@@ -1,16 +1,8 @@
 <form class="row g-3">
-	<div class="col-md-12">
-		<label for="progress" class="form-label m-0">作業進捗</label>
-		<div class="progress m-1" id="progress">
-			<div class="shadow text-reset progress-bar progress-bar-animated bg-info progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-		</div>
-	</div>
 	<div class="col-md-2">
 		<button type="submit" class="btn btn-primary">更新</button>
 	</div>
-	<div class="col-md-1" style="padding-left:0;">
-		<button type="reset" class="btn btn-warning">取消</button>
-	</div>	
+
 	<div class="col-md-12">
 		<label for="check-operate" class="form-label">作業指示</label>
 		<textarea class="form-control" id="check-operate" rows="3" name="check-operate"></textarea>

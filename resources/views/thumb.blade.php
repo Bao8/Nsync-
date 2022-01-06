@@ -4,9 +4,6 @@
     <div class="col-md-2">
 		<button type="submit" class="btn btn-primary">更新</button>
 	</div>
-	<div class="col-md-1" style="padding-left:0;">
-		<button type="reset" class="btn btn-warning">取消</button>
-	</div>
 
     <input class="row m-1" type="file" name="image">
     <input class="btn btn-success" type="submit" value="送信">

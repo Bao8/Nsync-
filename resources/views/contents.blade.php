@@ -2,8 +2,14 @@
 
 @section('content')
 	<div class="container titleinfo mb-2 pt-1">
-					<div class="mt-2">
-						<h2 class="title">相棒</h2>
+					<div class="mt-2 row">
+						<div class="col-5 border-bottom">
+						<h2 class="title m-0">相棒</h2>
+						</div>
+						<div class="col-5 border-bottom">
+						<h2 class="season-title m-0">season20</h2>
+						</div>
+						<div class="w-100"></div>
 					</div>
 			<div class="row infomation">
 				<div class="col-12 flex-coloum">
@@ -82,7 +88,7 @@
 				<a class="nav-link" id="episode2-tab" data-toggle="tab" href="#episode2" role="tab" aria-controls="episode2" aria-selected="false">Eps2</a>
 			</li>
 			<li class="nav-item" role="presentation">
-				<a class="nav-link" id="episode3-tab" data-toggle="tab" href="#episode3" role="tab" aria-controls="episode3" aria-selected="false">Eps3<span class="badge bg-danger m-1">New!</span></a>
+				<a class="nav-link" id="episode3-tab" data-toggle="tab" href="#episode3" role="tab" aria-controls="episode3" aria-selected="false">Eps3</a>
 				
 			</li>
 			<li class="nav-item" role="presentation">
@@ -99,13 +105,13 @@
 			<div class="tab-pane fade show active mt-1" id="episode1" role="tabpanel" aria-labelledby="episode1-tab">
 				<ul class="nav nav-tabs nav-fill" id="myTab2" role="tablist">
 					<li class="nav-item" role="presentation">
-						<a class="nav-link active" id="progress-tab" data-toggle="tab" href="#progress" role="tab" aria-controls="progress" aria-selected="true">作業進捗</a>
-					</li>
-					<li class="nav-item" role="presentation">
-						<a class="nav-link" id="basic-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="basic" aria-selected="false">基本情報</a>
+						<a class="nav-link active" id="basic-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="basic" aria-selected="true">基本情報</a>
 					</li>
 					<li class="nav-item" role="presentation">
 						<a class="nav-link" id="manage-tab" data-toggle="tab" href="#manage" role="tab" aria-controls="manage" aria-selected="false">納品管理</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="progress-tab" data-toggle="tab" href="#progress" role="tab" aria-controls="progress" aria-selected="false">作業進捗</a>
 					</li>
 					<li class="nav-item" role="presentation">
 						<a class="nav-link" id="file-tab" data-toggle="tab" href="#file" role="tab" aria-controls="file" aria-selected="false">動画</a>
@@ -121,19 +127,19 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="myTab2Content">
-					<div class="tab-pane fade show active mt-1" id="progress" role="tabpanel" aria-labelledby="progress-tab">
-
-						@include('progress')
-
-					</div>
-					<div class="tab-pane fade mt-1" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+					<div class="tab-pane fade show active mt-1" id="basic" role="tabpanel" aria-labelledby="basic-tab">
 
 						@include('info')
-						
+
 					</div>
 					<div class="tab-pane fade mt-1" id="manage" role="tabpanel" aria-labelledby="manage-tab">
-					
+
 						@include('delivery')
+						
+					</div>
+					<div class="tab-pane fade mt-1" id="progress" role="tabpanel" aria-labelledby="progress-tab">
+					
+						@include('progress')
 
 					</div>
 					<div class="tab-pane fade mt-1" id="file" role="tabpanel" aria-labelledby="file-tab">

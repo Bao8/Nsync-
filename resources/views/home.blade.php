@@ -50,7 +50,7 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td><a href="contents" class="text-decoration-none text-reset">銀の匙　Silver Spoon</a></td>
+      <td><a href="contents" class="text-decoration-none text-reset">相棒</a></td>
       <td>2021/11/12</td>
       <td>邦画</td>
 	  <td>本/予</td>

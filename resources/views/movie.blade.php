@@ -2,9 +2,7 @@
 	<div class="col-md-2">
 		<button type="submit" class="btn btn-primary">更新</button>
 	</div>
-	<div class="col-md-1" style="padding-left:0;">
-		<button type="reset" class="btn btn-warning">取消</button>
-	</div>	
+	
 	<div class="w-100"></div>
 	<div class="col-md-6">
     	<label for="movie-format" class="form-label">フォーマット</label>
