@@ -1,13 +1,50 @@
+<?php
+    //データベース情報の指定
+    $db['dbname'] = "nsync";  // データベース名
+    $db['user'] = "nsync";  // ユーザー名
+    $db['pass'] = "eraihito";  // ユーザー名のパスワード
+    $db['host'] = "ec2-54-249-230-203.ap-northeast-1.compute.amazonaws.com";  // DBサーバのURL
+
+    //dsnを作成
+    $dsn = sprintf('mysql:host=%s; dbname=%s; charset=utf8', $db['host'], $db['dbname']); 
+
+    try {
+        //PDOを使ってMySQLに接続
+        $dbh = new PDO($dsn, $db['user'], $db['pass'], [
+            PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
+        ]);
+
+		//テーブルのデータを取得
+		$sql = 'SELECT * FROM contents';
+		$stmt = $dbh->query($sql);
+	
+		//SQLの結果を受け取る
+		$result = $stmt->fetchall(PDO::FETCH_ASSOC);  
+		
+		$dbh = null;
+
+    } catch (PDOException $e) {
+        echo “接続失敗” . $e->getMessage();
+    exit();
+    };
+
+?>
+
 @extends('layouts.app')
 
 @section('content')
 	<div class="container titleinfo mb-2 pt-1">
+		<?php foreach($result as $column): ?>
 					<div class="mt-2 row">
 						<div class="col-5 border-bottom">
-						<h2 class="title m-0">相棒</h2>
+						<h2 class="title m-0">
+								<?php echo $column["title"] ?>
+						</h2>
 						</div>
 						<div class="col-5 border-bottom">
-						<h2 class="season-title m-0">season20</h2>
+						<h2 class="season-title m-0">
+							<?php echo $column["season-title"] ?>
+						</h2>
 						</div>
 						<div class="w-100"></div>
 					</div>
@@ -17,11 +54,11 @@
 					<div class="row">
 						<div class="col-6 mt-2">
 							<label for="rightsource" class="form-label m-0 font-weight-bold">権利元</label>
-							<input type="text" class="form-control" id="rightsource"  name="rightsource" value="テレビ朝日">
+							<input type="text" class="form-control" id="rightsource"  name="rightsource" value="<?php echo $column["rightsource"] ?>">
 						</div>
 						<div class="col-6 mt-2">
 							<label for="seriescontentscode" class="form-label m-0 font-weight-bold">シリーズコンテンツコード</label>
-							<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode" value="JPA10000063894">
+							<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode" value="<?php echo $column["seriescontentscode"] ?>">
 						</div>
 						<div class="col-6 mt-2">
 							<label for="category" class="form-label m-0 font-weight-bold">カテゴリ</label>
@@ -49,7 +86,7 @@
 						</div>
 						<div class="col mt-2 ">
 							<label for="season-info" class="form-label mb-0 font-weight-bold">備考</label>
-							<textarea class="form-control" id="season-info" rows="2" name="season-info"></textarea>
+							<textarea class="form-control" id="season-info" rows="2" name="<?php echo $column["season-info"] ?>"></textarea>
 						</div>
 					</div>
 				</div>
@@ -477,5 +514,6 @@
 				</div>
 			</div>
 		</div>
+	<?php endforeach ?>
 	</div>
 @endsection

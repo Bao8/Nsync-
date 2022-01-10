@@ -1,4 +1,4 @@
-<form class="row g-3">
+<form class="row g-3" method="post" action="">
 	<div class="col-md-2">
 		<button type="submit" class="btn btn-primary">更新</button>
 	</div>
