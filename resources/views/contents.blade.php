@@ -35,18 +35,14 @@
 @section('content')
 	<div class="container titleinfo mb-2 pt-1">
 		<?php foreach($result as $column): ?>
-					<div class="mt-2 row">
-						<div class="col-5 border-bottom">
-						<h2 class="title m-0">
+					<div class="mt-2 row border-bottom pb-0">
+						<h2 class="title m-0 pr-5">
 								<?php echo $column["title"] ?>
 						</h2>
-						</div>
-						<div class="col-5 border-bottom">
 						<h2 class="season-title m-0">
 							<?php echo $column["season-title"] ?>
 						</h2>
-						</div>
-						<div class="w-100"></div>
+						<!-- <div class="w-100"></div> -->
 					</div>
 			<div class="row infomation">
 				<div class="col-12 flex-coloum">

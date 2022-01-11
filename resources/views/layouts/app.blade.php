@@ -11,6 +11,7 @@
     try {
         //PDOを使ってMySQLに接続
         $dbh = new PDO($dsn, $db['user'], $db['pass'], [
+            //エラーモードのオプション設定
             PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
         ]);
 
