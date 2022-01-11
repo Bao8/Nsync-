@@ -31,16 +31,15 @@
 ?>
 
 @extends('layouts.app')
-
+@section("title","Nsync")
 @section('content')
 	<div class="container titleinfo mb-2 pt-1">
-		<?php foreach($result as $column): ?>
 					<div class="mt-2 row border-bottom pb-0">
 						<h2 class="title m-0 pr-3">
-								<?php echo $column["title"] ?>
+							{{ $content->title }}
 						</h2>
 						<h2 class="season-title m-0">
-							<?php echo $column["season-title"] ?>
+							{{ $content->season_title }}
 						</h2>
 						<!-- <div class="w-100"></div> -->
 					</div>
@@ -50,15 +49,16 @@
 					<div class="row">
 						<div class="col-6 mt-2">
 							<label for="rightsource" class="form-label m-0 font-weight-bold">権利元</label>
-							<input type="text" class="form-control" id="rightsource"  name="rightsource" value="<?php echo $column["rightsource"] ?>">
+							<input type="text" class="form-control" id="rightsource"  name="rightsource" value="{{ $content->rightsource }}" disabled>
 						</div>
 						<div class="col-6 mt-2">
 							<label for="seriescontentscode" class="form-label m-0 font-weight-bold">シリーズコンテンツコード</label>
-							<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode" value="<?php echo $column["seriescontentscode"] ?>">
+							<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode" value="{{ $content->seriescontentscode }}" disabled>
 						</div>
 						<div class="col-6 mt-2">
 							<label for="category" class="form-label m-0 font-weight-bold">カテゴリ</label>
-							<select id="category" class="form-select" name="category">
+							<input type="text" class="form-control" id="category"  name="category" value="{{ $content->category }}" disabled>
+							<!-- <select id="category" class="form-select" name="category">
 								<option selected>選択</option>
 								<option value="original">邦画</option>
 								<option value="youga">洋画</option>
@@ -67,22 +67,23 @@
 								<option value="anime">アニメ</option>
 								<option value="kaigaianime">海外アニメ</option>
 								<option value="variety">バラエティ</option>
-							</select>
+							</select> -->
 						</div>
 						<div class="col-6 mt-2">
 							<label for="genre" class="form-label m-0 font-weight-bold">ジャンル</label>
-							<select id="genre" class="form-select" name="genre">
+							<input type="text" class="form-control" id="genre"  name="genre" value="{{ $content->genre }}" disabled>
+							<!-- <select id="genre" class="form-select" name="genre">
 								<option selected>選択</option>
 								<option value="horror">ホラー</option>
 								<option value="comedy">コメディー</option>
 								<option value="romance">ロマンス</option>
 								<option value="action">アクション</option>
 								<option value="fantasy">ファンタジー</option>
-							</select>
+							</select> -->
 						</div>
 						<div class="col mt-2 ">
 							<label for="season-info" class="form-label mb-0 font-weight-bold">備考</label>
-							<textarea class="form-control" id="season-info" rows="2" name="<?php echo $column["season-info"] ?>"></textarea>
+							<textarea class="form-control" id="season-info" rows="2" name="season-info" disabled>{{ $content->season_info }}</textarea>
 						</div>
 					</div>
 				</div>
@@ -510,6 +511,5 @@
 				</div>
 			</div>
 		</div>
-	<?php endforeach ?>
 	</div>
 @endsection

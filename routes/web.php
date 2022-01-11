@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContentsController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\Material_UploadController;
 
@@ -16,31 +17,9 @@ use App\Http\Controllers\Material_UploadController;
 |
 */
 
-// Route::get('/app', function () {
-//     return view('app');
-// });
-
-// Route::get('/home', function () {
-//     return view('home');
-// });
-
-// Route::get('/contents', function () {
-//     return view('contents');
-// });
-
-// Route::get('/others', function () {
-//     return view('others');
-// });
-
-// Route::get('/meta', function () {
-//     return view('meta');
-// });
-
-// Route::get('/restore', function () {
-//     return view('restore');
-// });
-
-
+// /homeにアクセスしたら-[ContentsController]を使用して-「home」クラスを実行する
+Route::get('/home',[ContentsController::class,'home'])->name('home');
+Route::get("/contents/{id}",[ContentsController::class,'contents'])->name('contents');
 
 Route::post('/upload', [UploadController::class, 'store']);
 Route::post('/contents', [Material_UploadController::class, 'store']);
@@ -54,8 +33,8 @@ Auth::routes();
 // Route::get('/restore', [App\Http\Controllers\HomeController::class, 'restore'])->name('restore');
 // Route::get('/others', [App\Http\Controllers\HomeController::class, 'others'])->name('others');
 
-Route::get('/', [HomeController::class, 'home']);
-Route::get('/home', [HomeController::class, 'home']);
+// Route::get('/', [HomeController::class, 'home']);
+// Route::get('/home', [HomeController::class, 'home']);
 Route::get('/contents', [HomeController::class, 'contents']);
 Route::get('/meta', [HomeController::class, 'meta']);
 Route::get('/restore', [HomeController::class, 'restore']);

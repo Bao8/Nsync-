@@ -1,42 +1,11 @@
-<?php
-
-    //データベース情報の指定
-    $db['dbname'] = "nsync";  // データベース名
-    $db['user'] = "nsync";  // ユーザー名
-    $db['pass'] = "eraihito";  // ユーザー名のパスワード
-    $db['host'] = "ec2-54-249-230-203.ap-northeast-1.compute.amazonaws.com";  // DBサーバのURL
-
-    //dsnを作成
-    $dsn = sprintf('mysql:host=%s; dbname=%s; charset=utf8', $db['host'], $db['dbname']); 
-
-    try {
-        //PDOを使ってMySQLに接続
-        $dbh = new PDO($dsn, $db['user'], $db['pass'], [
-            PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
-        ]);
-
-		//テーブルのデータを取得
-		$sql = 'SELECT * FROM contents';
-		$stmt = $dbh->query($sql);
-	
-		//SQLの結果を受け取る
-		$result = $stmt->fetchall(PDO::FETCH_ASSOC);  
-		
-		$dbh = null;
-
-    } catch (PDOException $e) {
-        echo “接続失敗” . $e->getMessage();
-    exit();
-    };
-
-?>
 @extends('layouts.app')
-
+@section("title","Nsync-TOP")
 @section('content')
 
 <h2>作品一覧</h2>
-
-
+<!-- @if (session("err_msg"))
+			<p class="text-danger">{{ session("err_msg") }}</p>
+		@endif -->
 <form class="form-inline">
   <input class="form-control form-control-dark mb-2 " type="text" placeholder="Search" aria-label="Search">
   <button class="btn btn-outline-success mb-2 mr-2" type="submit">検索</button>
@@ -67,68 +36,32 @@
     </li>
   </ul>
 </form>
-<table class="text-center table table-striped table-bordered table-hover table-condensed table-sm">
-<?php foreach($result as $column): ?>
+<table class="text-center table table-bordered table-hover table-condensed table-sm">
+
   <thead>
     <tr>
       <th style="width:5%">No</th>
       <th scope="col" style="width:40%">作品名</th>
-      <th scope="col" style="width:5%">更新日</th>
+      <th scope="col" style="width:10%">シーズン情報</th>
+      <th scope="col" style="width:15%">権利元</th>
       <th scope="col" style="width:10%">カテゴリ</th>
-	  <th scope="col" style="width:10%">種類</th>
-      <th scope="col" style="width:5%">総話数</th>
-	  <th scope="col" style="width:15%">権利元</th>
+      <th scope="col" style="width:10%">ジャンル</th>
+      <th scope="col" style="width:10%">レイティング</th>
     </tr>
   </thead>
   <tbody>
+  <?php foreach($contents as $content): ?>
     <tr>
-      <th scope="row">1</th>
-      <td><a href="contents" class="text-decoration-none text-reset">相棒</a></td>
-      <td>2021/11/12</td>
-      <td>国内ドラマ</td>
-	  <td>本編</td>
-      <td>-</td>
-	  <td>テレビ朝日</td>
+      <th scope="row">{{ $content->id  }}</th>
+      <td><a href="contents/{{ $content->id  }}" class="text-decoration-none text-reset">{{ $content->title  }}</a></td>
+      <td>{{ $content->season_title  }}</td>
+      <td>{{ $content->rightsource  }}</td>
+      <td>{{ $content->category  }}</td>
+	    <td>{{ $content->genre  }}</td>
+      <td>{{ $content->raiting  }}</td>
     </tr>
-	 <tr>
-      <th scope="row">2</th>
-      <td><a href="contents" class="text-decoration-none text-reset">眠れる森の美女</a></td>
-      <td>2021/11/12</td>
-      <td>洋画</td>
-	  <td>字/吹/予</td>
-      <td>-</td>
-	  <td>ミッドシップ</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td><a href="contents" class="text-decoration-none text-reset">東京男子図鑑</a></td>
-      <td>2021/11/12</td>
-      <td>国内ドラマ</td>
-	  <td>1シーズン</td>
-      <td>10</td>
-	  <td>電通</td>
-    </tr>
-	  <tr>
-      <th scope="row">4</th>
-      <td><a href="contents" class="text-decoration-none text-reset">ふしぎ駄菓子屋 銭天堂</a></td>
-      <td>2021/11/12</td>
-      <td>アニメ(見逃し)</td>
-	  <td>1シーズン</td>
-      <td>30</td>
-	  <td>東映アニメーション</td>
-    </tr>
-	</tr>
-	  <tr>
-      <th scope="row">5</th>
-      <td><a href="contents" class="text-decoration-none text-reset">パ二パ二パイナ！</a></td>
-      <td>2021/11/12</td>
-      <td>バラエティ</td>
-	  <td>5シーズン</td>
-      <td>21</td>
-	  <td>プランナーズ21SYJ</td>
-    </tr>
+    <?php endforeach ?>
   </tbody>
-  <?php endforeach ?>
 </table>
 
 @endsection

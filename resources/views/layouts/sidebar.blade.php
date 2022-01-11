@@ -12,14 +12,14 @@
 					<a class="nav-link" href="home">トップリスト</a>
 				</li>
 				<li>
-					<a class="nav-link" href="contents">今日の納品</a>
+					<a class="nav-link" href="home">今日の納品</a>
 				</li>
 				<li>
 					<a class="nav-link" href="home">詳細検索</a>
 				</li>
 				{{--
 				<li>
-					<a class="nav-link" href="contents">素材管理</a>
+					<a class="nav-link" href="home">素材管理</a>
 				</li>
 				<li>
 					<a class="nav-link" href="meta">メタ管理</a>

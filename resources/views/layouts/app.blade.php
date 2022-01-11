@@ -1,36 +1,3 @@
-<?php
-    //データベース情報の指定
-    $db['dbname'] = "nsync";  // データベース名
-    $db['user'] = "nsync";  // ユーザー名
-    $db['pass'] = "eraihito";  // ユーザー名のパスワード
-    $db['host'] = "ec2-54-249-230-203.ap-northeast-1.compute.amazonaws.com";  // DBサーバのURL
-
-    //dsnを作成
-    $dsn = sprintf('mysql:host=%s; dbname=%s; charset=utf8', $db['host'], $db['dbname']); 
-
-    try {
-        //PDOを使ってMySQLに接続
-        $dbh = new PDO($dsn, $db['user'], $db['pass'], [
-            //エラーモードのオプション設定
-            PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
-        ]);
-
-		//テーブルのデータを取得
-		$sql = 'SELECT * FROM contents';
-		$stmt = $dbh->query($sql);
-	
-		//SQLの結果を受け取る
-		$result = $stmt->fetchall(PDO::FETCH_ASSOC);  
-		
-		$dbh = null;
-
-    } catch (PDOException $e) {
-        echo “接続失敗” . $e->getMessage();
-    exit();
-    };
-
-?>
-
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -40,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name') }}</title>
+    <title>@yield("title")</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -81,7 +48,7 @@
         <nav>
             <ul class="py-0 my-0 flex-md-nowrap row fixed-top navbar navbar-expand-md navbar-dark bg-dark shadow mr-0">
                 <a class="navbar-brand col-sm-2 col-md-2 mr-0" href="{{ url('/home') }}">
-                    {{ config('app.name') }}
+                    Nsync
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
