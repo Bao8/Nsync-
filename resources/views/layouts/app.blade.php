@@ -48,7 +48,7 @@
         <nav>
             <ul class="py-0 my-0 flex-md-nowrap row fixed-top navbar navbar-expand-md navbar-dark bg-dark shadow mr-0">
                 <a class="navbar-brand col-sm-2 col-md-2 mr-0" href="{{ url('/home') }}">
-                    Nsync
+                    nsync
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -108,7 +108,7 @@
                 @guest
                     @if (Route::has('login'))
                     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                        @yield('content')
+                        @include('auth.login')
                     </main>                     
                     @endif
                 @else

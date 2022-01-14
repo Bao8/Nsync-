@@ -1,8 +1,3 @@
-<form class="row g-3" action="" method="post">
-    @csrf
-	<div class="col-md-2">
-		<button type="submit" class="btn btn-primary">更新</button>
-	</div>	
 	<div class="w-100"></div>
 	<h1 class="col-12">素材管理</h1>
 	<div class="col-md-6">
@@ -144,4 +139,3 @@
 		<label for="delivery-caution" class="form-label">納品先別注意事項</label>
   		<textarea class="form-control" id="delivery-caution" rows="3" name="delivery-caution"></textarea>
  	</div>
-</form>

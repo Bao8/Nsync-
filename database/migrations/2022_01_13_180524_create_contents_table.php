@@ -18,9 +18,9 @@ class CreateContentsTable extends Migration
             $table->dateTime('created_at')->nullable();   /* 作成日時 更新日時 */
             $table->dateTime('updated_at')->nullable();   /* 更新日時 */
             $table->string('title',255);   /* 作品名 */
-            $table->integer('season-no')->unsigned();   /* シーズンNo */
-            $table->string('season-title',255);   /* シーズンタイトル */
-            $table->longtext('season-info',255);   /* シーズン情報 */
+            $table->integer('season_no')->unsigned();   /* シーズンNo */
+            $table->string('season_title',255);   /* シーズンタイトル */
+            $table->longtext('season_info',255);   /* シーズン情報 */
             // $table->integer('episode-no')->unsigned();   /* エピソードNo */
             // $table->string('episode-title',255);   /* エピソードタイトル */
             // $table->longtext('episode-info',255);   /* エピソード情報 */

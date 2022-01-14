@@ -17,9 +17,23 @@ use App\Http\Controllers\Material_UploadController;
 |
 */
 
+//リスト表示
 // /homeにアクセスしたら-[ContentsController]を使用して-「home」クラスを実行する
-Route::get('/home',[ContentsController::class,'home'])->name('home');
-Route::get("/contents/{id}",[ContentsController::class,'contents'])->name('contents');
+Route::get('home',[ContentsController::class,'home'])->name('home');
+
+//登録画面
+Route::get("create_contents",[ContentsController::class,'create'])->name('create');
+
+//登録作業
+Route::post("store",[ContentsController::class,'exeStore'])->name('store');
+
+//更新作業
+Route::post("update",[ContentsController::class,'update'])->name('update');
+
+
+//コンテンツページ詳細表示
+// /各IDのコンテンツページにアクセスしたら-[ContentsController]を使用して-「contents」クラスを実行する
+Route::get("contents/{id}",[ContentsController::class,'contents'])->name('contents');
 
 Route::post('/upload', [UploadController::class, 'store']);
 Route::post('/contents', [Material_UploadController::class, 'store']);
@@ -35,7 +49,7 @@ Auth::routes();
 
 // Route::get('/', [HomeController::class, 'home']);
 // Route::get('/home', [HomeController::class, 'home']);
-Route::get('/contents', [HomeController::class, 'contents']);
+// Route::get('/contents', [HomeController::class, 'contents']);
 Route::get('/meta', [HomeController::class, 'meta']);
 Route::get('/restore', [HomeController::class, 'restore']);
 Route::get('/others', [HomeController::class, 'others']);

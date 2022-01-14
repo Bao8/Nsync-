@@ -9,13 +9,16 @@
 			</a>
 			<ul class="nav-sub">
 				<li>
-					<a class="nav-link" href="home">トップリスト</a>
+					<a class="nav-link" href="{{ route('home') }}">トップリスト</a>
 				</li>
 				<li>
-					<a class="nav-link" href="home">今日の納品</a>
+					<a class="nav-link" href="{{ route('home') }}">今日の納品</a>
 				</li>
 				<li>
-					<a class="nav-link" href="home">詳細検索</a>
+					<a class="nav-link" href="{{ route('home') }}">詳細検索</a>
+				</li>
+				<li>
+					<a class="nav-link" href="{{ route('create') }}">作品登録</a>
 				</li>
 				{{--
 				<li>

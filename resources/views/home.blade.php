@@ -3,9 +3,9 @@
 @section('content')
 
 <h2>作品一覧</h2>
-<!-- @if (session("err_msg"))
+@if (session("err_msg"))
 			<p class="text-danger">{{ session("err_msg") }}</p>
-		@endif -->
+@endif
 <form class="form-inline">
   <input class="form-control form-control-dark mb-2 " type="text" placeholder="Search" aria-label="Search">
   <button class="btn btn-outline-success mb-2 mr-2" type="submit">検索</button>
@@ -40,7 +40,6 @@
 
   <thead>
     <tr>
-      <th style="width:5%">No</th>
       <th scope="col" style="width:40%">作品名</th>
       <th scope="col" style="width:10%">シーズン情報</th>
       <th scope="col" style="width:15%">権利元</th>
@@ -52,7 +51,6 @@
   <tbody>
   <?php foreach($contents as $content): ?>
     <tr>
-      <th scope="row">{{ $content->id  }}</th>
       <td><a href="contents/{{ $content->id  }}" class="text-decoration-none text-reset">{{ $content->title  }}</a></td>
       <td>{{ $content->season_title  }}</td>
       <td>{{ $content->rightsource  }}</td>
