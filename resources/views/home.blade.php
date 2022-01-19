@@ -40,12 +40,13 @@
 
   <thead>
     <tr>
-      <th scope="col" style="width:40%">作品名</th>
+      <th scope="col" style="width:35%">作品名</th>
       <th scope="col" style="width:10%">シーズン情報</th>
       <th scope="col" style="width:15%">権利元</th>
       <th scope="col" style="width:10%">カテゴリ</th>
       <th scope="col" style="width:10%">ジャンル</th>
       <th scope="col" style="width:10%">レイティング</th>
+      <!-- <th scope="col" style="width:5%">  </th> -->
     </tr>
   </thead>
   <tbody>
@@ -57,6 +58,7 @@
       <td>{{ $content->category  }}</td>
 	    <td>{{ $content->genre  }}</td>
       <td>{{ $content->raiting  }}</td>
+      <!-- <td><a href="contents/edit/{{ $content->id  }}" class="text-decoration-none text-reset">編集</a></td> -->
     </tr>
     <?php endforeach ?>
   </tbody>

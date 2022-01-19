@@ -13,23 +13,24 @@ class CreateContentsEpisodeTable extends Migration
      */
     public function up()
     {
-        Schema::create('contents-episode', function (Blueprint $table) {
+        Schema::create('ContentsEpisode', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
-            $table->bigInteger('contentsid')->unsigned();
+            $table->unsigndInteger('contents_id');
+            $table->foreign('contents_id')->references('id')->on('contents')->onDelete('cascade');
             $table->dateTime('created_at')->nullable();   /* 作成日時 更新日時 */
             $table->dateTime('updated_at')->nullable();   /* 更新日時 */
             $table->string('title',255);   /* 作品名 */
-            $table->integer('season_no')->unsigned();   /* シーズンNo */
-            $table->string('season_title',255);   /* シーズンタイトル */
-            $table->longtext('season_info',255);   /* シーズン情報 */
+            // $table->integer('season_no')->unsigned();   /* シーズンNo */
+            // $table->string('season_title',255);   /* シーズンタイトル */
+            // $table->longtext('season_info',255);   /* シーズン情報 */
             $table->integer('episode_no')->unsigned();   /* エピソードNo */
             $table->string('episode_title',255);   /* エピソードタイトル */
             $table->longtext('episode_info',255);   /* エピソード情報 */
             $table->string('contentstype',100);   /* コンテンツタイプ */
             $table->integer('contentslength')->unsigned();   /* 長さ（秒） */
-            $table->string('service',100);   /* 案件 */
+            // $table->string('service',100);   /* 案件 */
             $table->date('streamingdate');   /* 配信開始日 */
-            $table->char('seriescontentscode',14);   /* シリーズコンテンツコード */
+            // $table->char('seriescontentscode',14);   /* シリーズコンテンツコード */
             $table->char('contentscode',14);   /* コンテンツコード */
             $table->longText('check_operate');   /* 作業指示 */
             $table->longText('check_edit');   /* 編集内容 */
@@ -66,6 +67,6 @@ class CreateContentsEpisodeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contents-episode');
+        Schema::dropIfExists('_contents_episode');
     }
 }

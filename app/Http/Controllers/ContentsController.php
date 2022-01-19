@@ -23,6 +23,7 @@ class ContentsController extends Controller
 
         //viewsの「home.blade.php」を表示する 
         return view('/home',
+            //contentsというキーを作成、そのキーにデータを入れ、viewに渡す
             ["contents" => $contents]);
     }
 
@@ -59,7 +60,7 @@ class ContentsController extends Controller
     * 作品登録画面を表示する
     * @return view
     */
-    public function exeStore(Request $request)
+    public function exeStore(ContentRequest $request)
     {
             //データを受け取る
             $inputs = $request->all();
@@ -78,7 +79,27 @@ class ContentsController extends Controller
             return redirect(route("home"));
     }
 
-    public function update(Request $request) 
+    /**
+        * 作品編集ページを表示する
+        * @param int $id
+        * @return view
+    */
+    public function edit($id)
+    {
+        $content = Content::find($id);
+
+        // dd($content);
+
+        //データが無かった場合、エラーメッセージとともにhomeにリダイレクトする
+        if (is_null($content)){
+            \Session::flash("err_msg","データがありません");
+            return redirect(route("home"));
+        }
+
+        return view('edit',["content" => $content]);
+    }
+
+    public function update(ContentRequest $request) 
     {
         // ブログのデータを受け取る
         $inputs = $request->all();
@@ -108,8 +129,9 @@ class ContentsController extends Controller
             abort(500);
         }
 
-        \Session::flash('err_msg', 'ブログを更新しました');
-        return redirect('contents',["content" => $content]);
+        \Session::flash('err_msg', 'データを更新しました');
+        // return redirect('contents',["content" => $content]);
+        return redirect('home');
     }
         
 }

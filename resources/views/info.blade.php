@@ -1,4 +1,4 @@
-<form class="row g-3" method="post" action="{{ route('update') }}" onSubmit="return checkSubmit()">
+<form class="row g-3" method="post" action=" {{route('update')}} " onSubmit="return checkSubmit()">
 		@csrf
 	<div class="col-md-2">
 		<button type="submit" class="btn btn-primary">更新</button>
@@ -11,7 +11,12 @@
 		<input type="hidden" value="{{ $content->id }}" name="id">
     	<label for="seriescontentscode" class="form-label">シリーズコンテンツコード</label>
     	<input type="text" class="form-control" id="seriescontentscode" aria-describedby="" value="{{ $content->seriescontentscode }}" name="seriescontentscode">
- 	</div>
+		@if ($errors->has('seriescontentscode'))
+			<div class="text-danger">
+				{{ $errors->first('seriescontentscode') }}
+			</div>
+        @endif
+	</div>
 	<div class="col-12">
 		 <label for="contentscode" class="form-label">コンテンツコード</label>
 		 <input type="text" class="form-control" id="contentscode" aria-describedby="" value="{{ $content->seriescontentscode }}" name="contentscode">
@@ -20,6 +25,11 @@
     	<label for="season-no" class="form-label">シーズンNo.</label>
     	<input type="text" class="form-control" id="season-no" aria-describedby="" value="{{ $content->season_no }}" name="season_no">
  	</div>
+	 @if ($errors->has('season_no'))
+			<div class="text-danger">
+				{{ $errors->first('season_no') }}
+			</div>
+        @endif
 	<div class="col-12">
     	<label for="season-title" class="form-label">シーズンタイトル</label>
     	<input type="text" class="form-control" id="season-title" aria-describedby="" value="{{ $content->season_title }}" name="season_title">
@@ -28,13 +38,18 @@
 		<label for="episode-no" class="form-label">エピソードNo.</label>		
 		<input type="number" class="form-control" id="episode-no" aria-describedby="" value="{{ $content->episode_no }}" name="episode_no">
 	</div>
+	<!-- @if ($errors->has('episode_no'))
+			<div class="text-danger">
+				{{ $errors->first('episode_no') }}
+			</div>
+        @endif -->
 	<div class="col-12">
 		<label for="episode-title" class="form-label">エピソードタイトル</label>
 		<input type="text" class="form-control" id="episode-title" aria-describedby="" value="{{ $content->episode_title}}" name="episode_title">
 	</div>
 	<div class="col-12">
 		<label for="episode-info" class="form-label">エピソード情報</label>
-		<textarea class="form-control" id="episode-info" rows="3" name="episode_info">{{ $content->episode_title}}</textarea>
+		<textarea class="form-control" id="episode-info" rows="3" name="episode_info">{{ $content->episode_info}}</textarea>
 	</div>
 	<div class="col-12">
 		<label for="rightsource" class="form-label">権利元</label>

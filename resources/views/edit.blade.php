@@ -3,19 +3,19 @@
 @section('content')
 <div class="container titleinfo mb-2 pt-1">
 				<div class="mt-2 row border-bottom pb-0">
-						<div class="col-10">
+				<div class="col-10">
 
-							<h2 class="title m-0 pr-3 d-inline">
-								{{ $content->title }}
-							</h2>
-							<h2 class="season-title m-0 d-inline">
-								{{ $content->season_title }}
-							</h2>
-						</div>
-					<!-- <div class="justify-content-end ml-6 p-0">
-						<button type="button" class="btn btn-primary"><a href="edit/{{ $content->id  }}" class="text-decoration-none text-reset">編集</a></button>
+					<h2 class="title m-0 pr-3 d-inline">
+						{{ $content->title }}
+					</h2>
+					<h2 class="season-title m-0 d-inline">
+						{{ $content->season_title }}
+					</h2>
+				</div>
+				<!-- <div class="justify-content-end ml-5 p-0">
+						<button type="button" class="btn btn-primary"><a href="home" class="text-decoration-none text-reset">戻る</a></button>
 					</div> -->
-					<!-- <div class="w-100"></div> -->
+				<!-- <div class="w-100"></div> -->
 				</div>
 		<div class="row infomation">
 			<div class="col-12 flex-coloum">
@@ -23,23 +23,23 @@
 				<div class="row">
 					<div class="col-6 mt-2">
 						<label for="rightsource" class="form-label m-0 font-weight-bold">権利元</label>
-						<input type="text" class="form-control" id="rightsource"  name="rightsource" value="{{ $content->rightsource }}" disabled>
+						<input type="text" class="form-control" id="rightsource"  name="rightsource" value="{{ $content->rightsource }}" >
 					</div>
 					<div class="col-6 mt-2">
 						<label for="seriescontentscode" class="form-label m-0 font-weight-bold">シリーズコンテンツコード</label>
-						<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode" value="{{ $content->seriescontentscode }}" disabled>
+						<input type="text" class="form-control" id="seriescontentscode" name="seriescontentscode" value="{{ $content->seriescontentscode }}" >
 					</div>
 					<div class="col-6 mt-2">
 						<label for="category" class="form-label m-0 font-weight-bold">カテゴリ</label>
-						<input type="text" class="form-control" id="category"  name="category" value="{{ $content->category }}" disabled>
+						<input type="text" class="form-control" id="category"  name="category" value="{{ $content->category }}" >
 					</div>
 					<div class="col-6 mt-2">
 						<label for="genre" class="form-label m-0 font-weight-bold">ジャンル</label>
-						<input type="text" class="form-control" id="genre"  name="genre" value="{{ $content->genre }}" disabled>
+						<input type="text" class="form-control" id="genre"  name="genre" value="{{ $content->genre }}" >
 					</div>
 					<div class="col mt-2 ">
 						<label for="season-info" class="form-label mb-0 font-weight-bold">備考</label>
-						<textarea class="form-control" id="season-info" rows="2" name="season-info" disabled>{{ $content->season_info }}</textarea>
+						<textarea class="form-control" id="season-info" rows="2" name="season-info" >{{ $content->season_info }}</textarea>
 					</div>
 				</div>
 			</div>

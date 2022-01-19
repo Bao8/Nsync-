@@ -27,6 +27,9 @@ Route::get("create_contents",[ContentsController::class,'create'])->name('create
 //登録作業
 Route::post("store",[ContentsController::class,'exeStore'])->name('store');
 
+//編集画面
+// Route::get("contents/edit/{id}",[ContentsController::class,'edit'])->name('edit');
+
 //更新作業
 Route::post("update",[ContentsController::class,'update'])->name('update');
 

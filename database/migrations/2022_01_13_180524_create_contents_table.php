@@ -14,7 +14,7 @@ class CreateContentsTable extends Migration
     public function up()
     {
         Schema::create('contents', function (Blueprint $table) {
-            $table->bigIncrements('id')->unsigned();
+            $table->bigIncrements('contentsid')->unsigned();
             $table->dateTime('created_at')->nullable();   /* 作成日時 更新日時 */
             $table->dateTime('updated_at')->nullable();   /* 更新日時 */
             $table->string('title',255);   /* 作品名 */

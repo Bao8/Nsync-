@@ -9,11 +9,11 @@
 			<div class="col-12">
 				<label for="title" class="form-label">作品名</label>
 				<input type="text" class="form-control" id="title" aria-describedby="" value="" name="title">
-				<!-- @if ($errors->has('title'))
+				@if ($errors->has('title'))
 							<div class="text-danger">
 								{{ $errors->first('title') }}
 							</div>
-						@endif -->
+				@endif
 			</div>
 			<div class="col-12">
 				<label for="season_no" class="form-label">シーズンNo.</label>
@@ -27,6 +27,11 @@
 				<label for="seriescontentscode" class="form-label">シリーズコンテンツコード</label>
 				<input type="text" class="form-control" id="contentscode" aria-describedby="" value="" name="seriescontentscode">
 			</div>
+			@if ($errors->has('seriescontentscode'))
+			<div class="text-danger">
+				{{ $errors->first('seriescontentscode') }}
+			</div>
+        	@endif
 			<div class="col-12">
 				<label for="rightsource" class="form-label">権利元</label>
 				<input type="text" class="form-control" id="rightsource" aria-describedby="" value="" name="rightsource">
@@ -74,9 +79,17 @@
 					<option value="ERIN｜R18">ERIN｜R18</option>
 				</select>
 			</div>
-			<div class="col mt-2 ">
+			<div class="col-12 mt-2 ">
 				<label for="season_info" class="form-label mb-0 font-weight-bold">備考</label>
 				<textarea class="form-control" id="season_info" rows="2" name="season_info"></textarea>
+			</div>
+			<div class="col-12 mt-2 ">
+				<label for="season_info" class="form-label mb-0 font-weight-bold">エピソードNo</label>
+				<input type="text" class="form-control" id="episode_no" aria-describedby="" value="" name="episode_no">
+			</div>
+			<div class="col-12 mt-2 ">
+				<label for="season_info" class="form-label mb-0 font-weight-bold">エピソードタイトル</label>
+				<input type="text" class="form-control" id="episode_title" aria-describedby="" value="" name="episode_title">
 			</div>
 		</div>
 		<button type="submit" class="btn btn-primary ">追加</button>

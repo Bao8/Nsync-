@@ -25,8 +25,8 @@ class ContentRequest extends FormRequest
     {
         return [
             //
-            "title" => "required",
-            "seriescontentscode" => "required | max:14"
+            "seriescontentscode" => "required | max:14",
+            "season_no" => "integer"
         ];
     }
 }
