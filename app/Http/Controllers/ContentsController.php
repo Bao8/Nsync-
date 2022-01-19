@@ -57,7 +57,7 @@ class ContentsController extends Controller
     }
 
     /**
-    * 作品登録画面を表示する
+    * 作品登録作業
     * @return view
     */
     public function exeStore(ContentRequest $request)
@@ -74,7 +74,8 @@ class ContentsController extends Controller
                 DB::rollback();
                 abort(500);
             }
-
+            
+            //登録後のメッセージを表示
             \Session::flash("err_msg","データを登録しました");
             return redirect(route("home"));
     }
@@ -99,6 +100,8 @@ class ContentsController extends Controller
         return view('edit',["content" => $content]);
     }
 
+
+    
     public function update(ContentRequest $request) 
     {
         // ブログのデータを受け取る

@@ -24,7 +24,7 @@ class ContentRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            //バリデーションの設定
             "seriescontentscode" => "required | max:14",
             "season_no" => "integer"
         ];
