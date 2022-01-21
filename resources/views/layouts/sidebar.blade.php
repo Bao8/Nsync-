@@ -8,29 +8,56 @@
 				<span class="sr-only">(current)</span>
 			</a>
 			<ul class="nav-sub">
+			@guest
 				<li>
-					<a class="nav-link" href="{{ route('home') }}">トップリスト</a>
+					<a class="nav-link" href="{{ url('/login') }}">トップリスト</a>
 				</li>
 				<li>
-					<a class="nav-link" href="{{ route('home') }}">今日の納品</a>
+					<a class="nav-link" href="{{ url('/login') }}">今日の納品</a>
 				</li>
 				<li>
-					<a class="nav-link" href="{{ route('home') }}">詳細検索</a>
+					<a class="nav-link" href="{{ url('/login') }}">詳細検索</a>
 				</li>
 				<li>
-					<a class="nav-link" href="{{ route('create') }}">作品登録</a>
+					<a class="nav-link" href="{{ url('/login') }}">作品登録</a>
 				</li>
 				{{--
 				<li>
-					<a class="nav-link" href="home">素材管理</a>
+					<a class="nav-link" href="{{ url('/login') }}">素材管理</a>
 				</li>
 				<li>
-					<a class="nav-link" href="meta">メタ管理</a>
+					<a class="nav-link" href="{{ url('/login') }}">メタ管理</a>
 				</li>
 				<li>
-					<a class="nav-link" href="#">資料データ管理</a>
+					<a class="nav-link" href="{{ url('/login') }}">資料データ管理</a>
 				</li>
 				--}}
+            @else
+			<li>
+					<a class="nav-link" href="{{ url('/home') }}">トップリスト</a>
+				</li>
+				<li>
+					<a class="nav-link" href="{{ url('/home') }}">今日の納品</a>
+				</li>
+				<li>
+					<a class="nav-link" href="{{ url('/home') }}">詳細検索</a>
+				</li>
+				<li>
+					<a class="nav-link" href="{{ url('create_contents') }}">作品登録</a>
+				</li>
+				{{--
+				<li>
+					<a class="nav-link" href="{{ url('/home') }}">素材管理</a>
+				</li>
+				<li>
+					<a class="nav-link" href="{{ url('/home') }}">メタ管理</a>
+				</li>
+				<li>
+					<a class="nav-link" href="{{ url('/home') }}">資料データ管理</a>
+				</li>
+				--}}
+            @endguest
+				
 			</ul>
 		</li>
 		<a class="nav-blank"></a>

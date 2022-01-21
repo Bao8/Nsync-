@@ -47,9 +47,15 @@
     <div id="app">
         <nav>
             <ul class="py-0 my-0 flex-md-nowrap row fixed-top navbar navbar-expand-md navbar-dark bg-dark shadow mr-0">
+            @guest
+                <a class="navbar-brand col-sm-2 col-md-2 mr-0" href="{{ url('/login') }}">
+                    nsync
+                </a>
+            @else
                 <a class="navbar-brand col-sm-2 col-md-2 mr-0" href="{{ url('/home') }}">
                     nsync
                 </a>
+            @endguest
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -70,13 +76,13 @@
                             @guest
                                 @if (Route::has('login'))
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                        <a class="nav-link" href="{{ url('login') }}">{{ __('Login') }}</a>
                                     </li>
                                 @endif
 
                                 @if (Route::has('register'))
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                        <a class="nav-link" href="{{ url('register') }}">{{ __('Register') }}</a>
                                     </li>
                                 @endif
                             @else
@@ -108,7 +114,8 @@
                 @guest
                     @if (Route::has('login'))
                     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                        @include('auth.login')
+                    <!-- @include('auth.top_login') -->
+                    @yield('content')
                     </main>                     
                     @endif
                 @else
